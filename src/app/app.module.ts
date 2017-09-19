@@ -15,6 +15,8 @@ import {
   MdProgressSpinnerModule
 } from '@angular/material';
 
+import { StoreService } from './services/store.service';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutes } from './routes/routes';
@@ -47,6 +49,7 @@ import { SignupComponent } from './components/signup/signup.component';
     SignupComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     RouterModule,
     BrowserAnimationsModule,
@@ -57,7 +60,7 @@ import { SignupComponent } from './components/signup/signup.component';
     MdProgressSpinnerModule,
     RouterModule.forRoot(AppRoutes),
   ],
-  providers: [],
+  providers: [StoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
