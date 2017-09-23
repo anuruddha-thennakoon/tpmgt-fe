@@ -20,17 +20,18 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  login() {
+  submitForm() {
     if (this.username == "admin" && this.password == "1234") {
       this.router.navigateByUrl('/adminpage');
     } else if (this.username == "faculty" && this.password == "1234") {
-      this.router.navigateByUrl('/adminpage');
+      this.router.navigateByUrl('/facultypage');
     } else if (this.username == "student" && this.password == "1234") {
-      this.router.navigateByUrl('/adminpage');
+      this.router.navigateByUrl('/studentpage');
     } else if (this.username == "company" && this.password == "1234") {
-      this.router.navigateByUrl('/adminpage');
+      this.router.navigateByUrl('/companypage');
     } else {
       alert('errorrrr');
     }
   }
+
 }
