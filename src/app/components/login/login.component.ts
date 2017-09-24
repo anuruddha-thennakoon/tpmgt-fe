@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
 
   submitForm() {
     if (this.username == "admin" && this.password == "1234") {
-      this.router.navigateByUrl('/adminpage');
+      this.router.navigateByUrl('/adminpage/dashboard');
     } else if (this.username == "faculty" && this.password == "1234") {
       this.router.navigateByUrl('/facultypage');
     } else if (this.username == "student" && this.password == "1234") {

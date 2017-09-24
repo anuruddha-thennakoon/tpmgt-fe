@@ -32,6 +32,8 @@ import { AdminPageComponent } from './components/admin-page/admin-page.component
 import { StudentNavigationComponent } from './components/student-page/student-navigation/student-navigation.component';
 import { SendinquiriesComponent } from './components/sendinquiries/sendinquiries.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { AdminNavigationComponent } from './components/admin-page/admin-navigation/admin-navigation.component';
+import { DashboardComponent } from './components/admin-page/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { SignupComponent } from './components/signup/signup.component';
     AdminPageComponent,
     StudentNavigationComponent,
     SendinquiriesComponent,
-    SignupComponent
+    SignupComponent,
+    AdminNavigationComponent,
+    DashboardComponent
   ],
   imports: [
     FormsModule,

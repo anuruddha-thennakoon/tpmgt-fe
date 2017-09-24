@@ -11,12 +11,22 @@ import { AdminPageComponent } from '../components/admin-page/admin-page.componen
 import { StudentNavigationComponent } from '../components/student-page/student-navigation/student-navigation.component';
 import { SendinquiriesComponent } from '../components/sendinquiries/sendinquiries.component';
 import { SignupComponent } from '../components/signup/signup.component';
+import { DashboardComponent } from '../components/admin-page/dashboard/dashboard.component';
 
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'studentpage', component: StudentPageComponent },
     { path: 'facultypage', component: FacultyPageComponent },
-    { path: 'adminpage', component: AdminPageComponent },
-    { path: 'companypage', component: CompanyPageComponent }
+    { path: 'companypage', component: CompanyPageComponent },
+    {
+        path: 'adminpage',
+        component: AdminPageComponent,
+        children: [
+            {
+                path: 'dashboard',
+                component: DashboardComponent
+            }
+        ]
+    },
 ]
