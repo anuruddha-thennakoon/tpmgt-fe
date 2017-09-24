@@ -17,7 +17,7 @@
 
 
 .navigation ul li{
-    width:120px;
+    width:125px;
     height: 50px;
     list-style-type: none;
     display:table-cell;
@@ -30,7 +30,7 @@
     color:#FFFFFF !important;
     cursor:pointer !important;
     text-decoration: none;
-     width:120px;
+     width:125px;
      height:50px;
      text-align: center;
      font-size:15px;
