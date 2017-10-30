@@ -36,6 +36,7 @@ import { AdminNavigationComponent } from './components/admin-page/admin-navigati
 import { DashboardComponent } from './components/admin-page/dashboard/dashboard.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import {StudentCommonNavigationComponent} from './components/student-common-navigation/student-common-navigation.component';
+import {StudentProfileComponent} from './components/student-profile/student-profile.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import {StudentCommonNavigationComponent} from './components/student-common-navi
     AdminNavigationComponent,
     DashboardComponent,
     JobsComponent,
-    StudentCommonNavigationComponent
+    StudentCommonNavigationComponent,
+    StudentProfileComponent
   ],
   imports: [
     FormsModule,

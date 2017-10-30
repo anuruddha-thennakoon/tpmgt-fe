@@ -14,6 +14,7 @@ import { SignupComponent } from '../components/signup/signup.component';
 import { DashboardComponent } from '../components/admin-page/dashboard/dashboard.component';
 import { JobsComponent } from '../components/jobs/jobs.component';
 import {StudentCommonNavigationComponent} from '../components/student-common-navigation/student-common-navigation.component';
+import {StudentProfileComponent} from '../components/student-profile/student-profile.component';
 
 
 export const AppRoutes: Routes = [
@@ -23,6 +24,7 @@ export const AppRoutes: Routes = [
     { path: 'facultypage', component: FacultyPageComponent },
     { path: 'companypage', component: CompanyPageComponent },
      { path: 'jobs', component: JobsComponent },
+      { path: 'studentprofile', component: StudentProfileComponent },
     {
         path: 'adminpage',
         component: AdminPageComponent,

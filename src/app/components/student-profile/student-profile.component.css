@@ -1,0 +1,31 @@
+.profile{
+    margin-top:50px;
+
+}
+
+
+.profile-image{
+    text-align:center;
+
+}
+
+.p-image{
+   
+    border-radius: 50%;
+
+}
+
+
+.profile-name{
+    margin-top:10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.profile-institute{
+text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+
+}
