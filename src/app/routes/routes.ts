@@ -15,6 +15,7 @@ import { DashboardComponent } from '../components/admin-page/dashboard/dashboard
 import { JobsComponent } from '../components/jobs/jobs.component';
 
 
+
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
@@ -31,5 +32,7 @@ export const AppRoutes: Routes = [
             }
         ]
     },
-    { path: 'jobs', component: JobsComponent },
+
+    
+
 ]
