@@ -2,33 +2,29 @@
 .navigation{
    
     width:100%;
-    
+      margin-left: auto;
+    margin-right:auto;
     /*margin-right:auto;*/
-   
+   text-align: center;
   
 }
 .navigation-ul{
   
-  width: 800px;
+    width:60%;
     margin-left: auto;
     margin-right:auto;
     margin-top:25px;
 }
 
-.navigation-ul-one{
-    border-left:2px solid #5580E9;
-}
+
 .navigation ul li{
-    width:125px;
-    height: 125px;
+   width:160px;
     list-style-type: none;
     display:inline-block;
     margin-right: -4px;
-
+    border-bottom: 2px solid transparent;
     text-align: center;
-     border-top:2px solid #5580E9;
-     border-right: 2px solid #5580E9;
-     border-bottom:2px solid #5580E9;
+   
      
     
 }
@@ -36,8 +32,7 @@
     color:#FFFFFF !important;
     cursor:pointer !important;
     text-decoration: none;
-     width:125px;
-     height:125px;
+    
      text-align: center;
      font-size:15px;
       border-right: 4px solid transparent;
@@ -45,13 +40,11 @@
 
 .navigation ul li:hover{
         color:#FFFFFF !important;
-       border-bottom:5px solid #80cacd;
-       background:#5580E9;
+        border-bottom: 2px solid #ffffff;
+      
 }
 
-.navigation ul li:hover a{
-       
-}
+
 .navigation ul li:hover .fa{
     color:#FFFFFF;
 }
@@ -76,11 +69,11 @@ background: #D54A50;
 }*/
 
 .icon-text{
-    color:#5580E9;
+    color:#ffffff;
 }
 /***************************ICONS**********************/
 .fa{
-    color:#5580E9;
+    color:#ffffff;
     padding:5px;
    margin-left: auto;
    margin-right:auto;
