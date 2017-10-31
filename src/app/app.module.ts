@@ -24,6 +24,9 @@ import { SendinquiriesComponent } from './components/sendinquiries/sendinquiries
 import { SignupComponent } from './components/signup/signup.component';
 import { AdminNavigationComponent } from './components/admin-page/admin-navigation/admin-navigation.component';
 import { DashboardComponent } from './components/admin-page/dashboard/dashboard.component';
+import { JobsComponent } from './components/jobs/jobs.component';
+import {StudentCommonNavigationComponent} from './components/student-common-navigation/student-common-navigation.component';
+import {StudentProfileComponent} from './components/student-profile/student-profile.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { DashboardComponent } from './components/admin-page/dashboard/dashboard.
     SendinquiriesComponent,
     SignupComponent,
     AdminNavigationComponent,
-    DashboardComponent
+    DashboardComponent,
+    JobsComponent,
+    StudentCommonNavigationComponent,
+    StudentProfileComponent
   ],
   imports: [
     FormsModule,
