@@ -4,17 +4,6 @@ import { RouterModule } from '@angular/router';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import 'hammerjs';
-
-import {
-  MdInputModule,
-  // MaterialModule,
-  MdDatepickerModule,
-  MdNativeDateModule,
-  MdSliderModule,
-  MdProgressSpinnerModule
-} from '@angular/material';
-
 import { StoreService } from './services/store.service';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -30,6 +19,7 @@ import { FacultyPageComponent } from './components/faculty-page/faculty-page.com
 import { CompanyPageComponent } from './components/company-page/company-page.component';
 import { AdminPageComponent } from './components/admin-page/admin-page.component';
 import { StudentNavigationComponent } from './components/student-page/student-navigation/student-navigation.component';
+import { FacultyNavigationComponent } from './components/faculty-page/faculty-navigation/faculty-navigation.component';
 import { SendinquiriesComponent } from './components/sendinquiries/sendinquiries.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { AdminNavigationComponent } from './components/admin-page/admin-navigation/admin-navigation.component';
@@ -57,11 +47,6 @@ import { DashboardComponent } from './components/admin-page/dashboard/dashboard.
     BrowserModule,
     RouterModule,
     BrowserAnimationsModule,
-    MdInputModule,
-    MdDatepickerModule,
-    MdNativeDateModule,
-    MdSliderModule,
-    MdProgressSpinnerModule,
     RouterModule.forRoot(AppRoutes),
   ],
   providers: [StoreService],
