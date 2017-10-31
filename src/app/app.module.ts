@@ -26,6 +26,7 @@ import { AdminNavigationComponent } from './components/admin-page/admin-navigati
 import { DashboardComponent } from './components/admin-page/dashboard/dashboard.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { ManageStudentComponent } from './components/faculty-page/manage-student/manage-student.component';
+import { ReportsComponent } from './components/faculty-page/reports/reports.component';
 import {StudentCommonNavigationComponent} from './components/student-common-navigation/student-common-navigation.component';
 import {FacultyCommonNavigationComponent} from './components/faculty-page/faculty-common-navigation/faculty-common-navigation.component';
 import {StudentProfileComponent} from './components/student-profile/student-profile.component';
@@ -49,6 +50,7 @@ import {StudentProfileComponent} from './components/student-profile/student-prof
     DashboardComponent,
     JobsComponent,
     ManageStudentComponent,
+    ReportsComponent,
     StudentCommonNavigationComponent,
     FacultyCommonNavigationComponent,
     StudentProfileComponent
