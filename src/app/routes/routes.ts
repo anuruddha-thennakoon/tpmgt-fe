@@ -15,8 +15,8 @@ import { DashboardComponent } from '../components/admin-page/dashboard/dashboard
 import { JobsComponent } from '../components/jobs/jobs.component';
 import {StudentCommonNavigationComponent} from '../components/student-common-navigation/student-common-navigation.component';
 import {StudentProfileComponent} from '../components/student-profile/student-profile.component';
-
-
+import{CreateResumeComponent} from '../components/create-resume/create-resume.component';
+import {EditStudentProfileComponent} from '../components/edit-student-profile/edit-student-profile.component';
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
@@ -25,6 +25,9 @@ export const AppRoutes: Routes = [
     { path: 'companypage', component: CompanyPageComponent },
      { path: 'jobs', component: JobsComponent },
       { path: 'studentprofile', component: StudentProfileComponent },
+      { path: 'createresume', component: CreateResumeComponent },
+       { path: 'editstudentprofile', component: EditStudentProfileComponent },
+
     {
         path: 'adminpage',
         component: AdminPageComponent,

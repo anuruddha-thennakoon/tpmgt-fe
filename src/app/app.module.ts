@@ -37,7 +37,8 @@ import { DashboardComponent } from './components/admin-page/dashboard/dashboard.
 import { JobsComponent } from './components/jobs/jobs.component';
 import {StudentCommonNavigationComponent} from './components/student-common-navigation/student-common-navigation.component';
 import {StudentProfileComponent} from './components/student-profile/student-profile.component';
-
+import{CreateResumeComponent} from './components/create-resume/create-resume.component';
+import {EditStudentProfileComponent} from './components/edit-student-profile/edit-student-profile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,7 +57,9 @@ import {StudentProfileComponent} from './components/student-profile/student-prof
     DashboardComponent,
     JobsComponent,
     StudentCommonNavigationComponent,
-    StudentProfileComponent
+    StudentProfileComponent,
+    CreateResumeComponent,
+    EditStudentProfileComponent
   ],
   imports: [
     FormsModule,

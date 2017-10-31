@@ -1,3 +1,21 @@
+
+
+
+#imageUpload
+{
+   
+   opacity:0;
+  
+
+}
+
+#profileImage:hover{
+     filter:brightness(50%);
+}
+#imageUpload:hover{
+    filter:brightness(50%);
+}
+
 hr{
     width:2px;
 }
@@ -18,7 +36,8 @@ tr{
 
 .profile-image{
     text-align:center;
-
+ float:left;
+   margin-top:25px;
 }
 
 .p-image{
@@ -60,8 +79,8 @@ tr{
 }
 
 .btn-profile-pic{
-    margin-top:10px;
-    width:220px;
+    margin-top:5px;
+        width:220px;
     margin-left:58px;
 }
 
