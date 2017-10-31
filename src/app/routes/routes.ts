@@ -17,6 +17,9 @@ import {StudentCommonNavigationComponent} from '../components/student-common-nav
 import {StudentProfileComponent} from '../components/student-profile/student-profile.component';
 import{CreateResumeComponent} from '../components/create-resume/create-resume.component';
 import {EditStudentProfileComponent} from '../components/edit-student-profile/edit-student-profile.component';
+import {ApplyJobComponent} from '../components/apply-job/apply-job.component';
+import {StudentInquiryComponent} from '../components/student-inquiry/student-inquiry.component';
+
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
@@ -27,7 +30,8 @@ export const AppRoutes: Routes = [
       { path: 'studentprofile', component: StudentProfileComponent },
       { path: 'createresume', component: CreateResumeComponent },
        { path: 'editstudentprofile', component: EditStudentProfileComponent },
-
+       {path: 'applyjob', component:ApplyJobComponent},
+       {path:'studentinquiry', component:StudentInquiryComponent},
     {
         path: 'adminpage',
         component: AdminPageComponent,
