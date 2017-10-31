@@ -13,7 +13,9 @@ import { SendinquiriesComponent } from '../components/sendinquiries/sendinquirie
 import { SignupComponent } from '../components/signup/signup.component';
 import { DashboardComponent } from '../components/admin-page/dashboard/dashboard.component';
 import { JobsComponent } from '../components/jobs/jobs.component';
+import { ManageStudentComponent } from '../components/faculty-page/manage-student/manage-student.component';
 import {StudentCommonNavigationComponent} from '../components/student-common-navigation/student-common-navigation.component';
+import {FacultyCommonNavigationComponent} from '../components/faculty-page/faculty-common-navigation/faculty-common-navigation.component';
 import {StudentProfileComponent} from '../components/student-profile/student-profile.component';
 
 
@@ -24,6 +26,7 @@ export const AppRoutes: Routes = [
     { path: 'facultypage', component: FacultyPageComponent },
     { path: 'companypage', component: CompanyPageComponent },
      { path: 'jobs', component: JobsComponent },
+     { path: 'managestudent', component: ManageStudentComponent },
       { path: 'studentprofile', component: StudentProfileComponent },
     {
         path: 'adminpage',

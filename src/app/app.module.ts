@@ -25,7 +25,9 @@ import { SignupComponent } from './components/signup/signup.component';
 import { AdminNavigationComponent } from './components/admin-page/admin-navigation/admin-navigation.component';
 import { DashboardComponent } from './components/admin-page/dashboard/dashboard.component';
 import { JobsComponent } from './components/jobs/jobs.component';
+import { ManageStudentComponent } from './components/faculty-page/manage-student/manage-student.component';
 import {StudentCommonNavigationComponent} from './components/student-common-navigation/student-common-navigation.component';
+import {FacultyCommonNavigationComponent} from './components/faculty-page/faculty-common-navigation/faculty-common-navigation.component';
 import {StudentProfileComponent} from './components/student-profile/student-profile.component';
 
 @NgModule({
@@ -40,12 +42,15 @@ import {StudentProfileComponent} from './components/student-profile/student-prof
     CompanyPageComponent,
     AdminPageComponent,
     StudentNavigationComponent,
+    FacultyNavigationComponent,
     SendinquiriesComponent,
     SignupComponent,
     AdminNavigationComponent,
     DashboardComponent,
     JobsComponent,
+    ManageStudentComponent,
     StudentCommonNavigationComponent,
+    FacultyCommonNavigationComponent,
     StudentProfileComponent
   ],
   imports: [
