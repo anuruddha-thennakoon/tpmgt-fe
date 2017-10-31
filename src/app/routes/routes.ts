@@ -15,6 +15,7 @@ import { DashboardComponent } from '../components/admin-page/dashboard/dashboard
 import { JobsComponent } from '../components/jobs/jobs.component';
 import { ManageStudentComponent } from '../components/faculty-page/manage-student/manage-student.component';
 import { ReportsComponent } from '../components/faculty-page/reports/reports.component';
+import { TraineeRecordsComponent } from '../components/faculty-page/trainee-records/trainee-records.component';
 import {StudentCommonNavigationComponent} from '../components/student-common-navigation/student-common-navigation.component';
 import {FacultyCommonNavigationComponent} from '../components/faculty-page/faculty-common-navigation/faculty-common-navigation.component';
 import {StudentProfileComponent} from '../components/student-profile/student-profile.component';
@@ -28,7 +29,8 @@ export const AppRoutes: Routes = [
     { path: 'companypage', component: CompanyPageComponent },
      { path: 'jobs', component: JobsComponent },
      { path: 'managestudent', component: ManageStudentComponent },
-     { path: 'reports', component: ReportsComponent },
+     { path: 'reports', component: ReportsComponent },     
+     { path: 'traineerecords', component: TraineeRecordsComponent },
       { path: 'studentprofile', component: StudentProfileComponent },
     {
         path: 'adminpage',
