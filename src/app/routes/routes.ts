@@ -23,6 +23,8 @@ import {EditStudentProfileComponent} from '../components/edit-student-profile/ed
 import {ApplyJobComponent} from '../components/apply-job/apply-job.component';
 import {StudentInquiryComponent} from '../components/student-inquiry/student-inquiry.component';
 import {StudentHelpComponent} from '../components/student-help/student-help.component';
+import{AdminInquiryViewComponent} from '../components/admin-inquiry-view/admin-inquiry-view.component';
+import {AdminCommonNavigationComponent} from '../components/admin-common-navigation/admin-common-navigation.component';
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
@@ -36,6 +38,7 @@ export const AppRoutes: Routes = [
        {path: 'applyjob', component:ApplyJobComponent},
        {path:'studentinquiry', component:StudentInquiryComponent},
        {path:'studenthelp', component:StudentHelpComponent},
+       {path:'admininquiryview',component:AdminInquiryViewComponent},
     {
         path: 'adminpage',
         component: AdminPageComponent,
