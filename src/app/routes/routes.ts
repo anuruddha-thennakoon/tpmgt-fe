@@ -26,6 +26,7 @@ import {StudentHelpComponent} from '../components/student-help/student-help.comp
 import{AdminInquiryViewComponent} from '../components/admin-inquiry-view/admin-inquiry-view.component';
 import {AdminCommonNavigationComponent} from '../components/admin-common-navigation/admin-common-navigation.component';
 import {AdminCompanyViewComponent} from '../components/admin-company-view/admin-company-view.component';
+import {AdminCreateAccountComponent} from '../components/admin-create-account/admin-create-account.component';
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
@@ -41,6 +42,7 @@ export const AppRoutes: Routes = [
        {path:'studenthelp', component:StudentHelpComponent},
        {path:'admininquiryview',component:AdminInquiryViewComponent},
        {path:'admincompanyview',component:AdminCompanyViewComponent},
+        {path:'admincreateaccount',component:AdminCreateAccountComponent},
     {
         path: 'adminpage',
         component: AdminPageComponent,
