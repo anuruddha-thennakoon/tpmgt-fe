@@ -39,6 +39,7 @@ import {StudentInquiryComponent} from './components/student-inquiry/student-inqu
 import {StudentHelpComponent} from './components/student-help/student-help.component';
 import{AdminInquiryViewComponent} from './components/admin-inquiry-view/admin-inquiry-view.component';
 import {AdminCommonNavigationComponent} from './components/admin-common-navigation/admin-common-navigation.component';
+import{AdminCompanyViewComponent} from './components/admin-company-view/admin-company-view.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +69,8 @@ import {AdminCommonNavigationComponent} from './components/admin-common-navigati
     StudentInquiryComponent,
     StudentHelpComponent,
     AdminInquiryViewComponent,
-    AdminCommonNavigationComponent
+    AdminCommonNavigationComponent,
+    AdminCompanyViewComponent
   ],
   imports: [
     FormsModule,
