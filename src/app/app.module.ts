@@ -33,6 +33,12 @@ import { CreateStudentprofileComponent } from './components/faculty-page/create-
 import {StudentCommonNavigationComponent} from './components/student-common-navigation/student-common-navigation.component';
 import {FacultyCommonNavigationComponent} from './components/faculty-page/faculty-common-navigation/faculty-common-navigation.component';
 import {StudentProfileComponent} from './components/student-profile/student-profile.component';
+import { CompanyNavigationComponent } from './components/company-page//company-navigation/company-navigation.component';
+import { CompanyProfileComponent } from './components/company-page/company-profile/company-profile.component';
+import { PublishVacanciesComponent } from './components/company-page/publish-vacancies/publish-vacancies.component';
+import { ReportsComponent } from './components/company-page/reports/reports.component';
+
+
 import{CreateResumeComponent} from './components/create-resume/create-resume.component';
 import {EditStudentProfileComponent} from './components/edit-student-profile/edit-student-profile.component';
 import{ApplyJobComponent} from './components/apply-job/apply-job.component';
@@ -64,6 +70,10 @@ import {StudentHelpComponent} from './components/student-help/student-help.compo
     StudentCommonNavigationComponent,
     FacultyCommonNavigationComponent,
     StudentProfileComponent,
+    CompanyNavigationComponent,
+    CompanyProfileComponent,
+    PublishVacanciesComponent,
+    ReportsComponent,
     CreateResumeComponent,
     EditStudentProfileComponent,
     ApplyJobComponent,

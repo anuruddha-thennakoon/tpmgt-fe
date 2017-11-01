@@ -4,12 +4,12 @@
     font-size:34px;
     text-align: center;
     color:#498DE7;
-
+    margin-bottom:30px;
 }
 
 .create-resume-inner{
-     width:70%;
-    height:700px;
+     width:50%;
+    height:100%;
     margin-left: auto;
     margin-right:auto;
     box-shadow: 10px 10px 5px  #888888;
@@ -23,7 +23,7 @@ h3{
 }
 
 .create-resume-form{
-    width:70%;
+    width:95%;
 margin-left:auto;
     margin-left:auto;
 
@@ -31,4 +31,60 @@ margin-left:auto;
 .form-group{
     width:60%;
     
+}
+
+input{
+    margin-top:10px;
+    border-radius: 5px;
+    
+}
+
+.cv-image > input
+{
+    display: none;
+   
+}
+
+.basic-info > input{
+   width:200px;
+
+    
+}
+
+textarea{
+    width:79%;
+    height: 80px;
+    border-radius: 5px;
+    margin-bottom:8px;
+}
+
+.personal-information > input{
+    width:79%;
+}
+
+.personal-information > textarea{
+    margin-top:8px;
+    height:100px;
+}
+.personal-information,.Education,.Experience{
+    margin-top:10px;
+    margin-bottom: 15px;
+}
+.Education >input{
+    width:79%;
+}
+
+.Experience > textarea{
+    height:150px;
+}
+
+.btn-create-resume{
+
+  
+    margin-bottom: 20px;
+    margin-top:10px;
+}
+
+.create-resume-form{
+    margin-top:25px;
 }
