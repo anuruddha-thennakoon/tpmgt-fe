@@ -19,7 +19,10 @@ import { TraineeRecordsComponent } from '../components/faculty-page/trainee-reco
 import {StudentCommonNavigationComponent} from '../components/student-common-navigation/student-common-navigation.component';
 import {FacultyCommonNavigationComponent} from '../components/faculty-page/faculty-common-navigation/faculty-common-navigation.component';
 import {StudentProfileComponent} from '../components/student-profile/student-profile.component';
-
+import{CreateResumeComponent} from '../components/create-resume/create-resume.component';
+import {EditStudentProfileComponent} from '../components/edit-student-profile/edit-student-profile.component';
+import {ApplyJobComponent} from '../components/apply-job/apply-job.component';
+import {StudentInquiryComponent} from '../components/student-inquiry/student-inquiry.component';
 
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
@@ -32,6 +35,10 @@ export const AppRoutes: Routes = [
      { path: 'reports', component: ReportsComponent },     
      { path: 'traineerecords', component: TraineeRecordsComponent },
       { path: 'studentprofile', component: StudentProfileComponent },
+      { path: 'createresume', component: CreateResumeComponent },
+       { path: 'editstudentprofile', component: EditStudentProfileComponent },
+       {path: 'applyjob', component:ApplyJobComponent},
+       {path:'studentinquiry', component:StudentInquiryComponent},
     {
         path: 'adminpage',
         component: AdminPageComponent,
