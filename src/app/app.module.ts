@@ -4,17 +4,6 @@ import { RouterModule } from '@angular/router';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import 'hammerjs';
-
-import {
-  MdInputModule,
-  // MaterialModule,
-  MdDatepickerModule,
-  MdNativeDateModule,
-  MdSliderModule,
-  MdProgressSpinnerModule
-} from '@angular/material';
-
 import { StoreService } from './services/store.service';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -70,11 +59,6 @@ import {StudentInquiryComponent} from './components/student-inquiry/student-inqu
     BrowserModule,
     RouterModule,
     BrowserAnimationsModule,
-    MdInputModule,
-    MdDatepickerModule,
-    MdNativeDateModule,
-    MdSliderModule,
-    MdProgressSpinnerModule,
     RouterModule.forRoot(AppRoutes),
   ],
   providers: [StoreService],
