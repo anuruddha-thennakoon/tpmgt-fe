@@ -1,14 +1,12 @@
-.selection-text{
-    /*text-align: center;*/
+ .icon-text{    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     color:#3DA1E4;
-    margin-top:40px;
-    margin-bottom: 30px;
-}
+}   
+
 .reports{
     width:70%;
-    font-size: 18px;
+    font-size: 14px;
     margin-left: auto;
     margin-right: auto;
     margin-top:100px;
@@ -29,5 +27,21 @@
     margin-top:25px;
     list-style-type: none;
 }
+
+
+.list{
+    border-radius: 8px;
+    padding: 10px 24px;
+    /* text-align: center; */
+    font-size: 15px;
+    background-color: rgb(202, 230, 238);
+    color: #008CBA(255, 255, 255); -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+    }
+    .list:hover {
+        background-color:#ec6960;  /* Green */
+        color: #008CBA;
+    }
+    
 
 

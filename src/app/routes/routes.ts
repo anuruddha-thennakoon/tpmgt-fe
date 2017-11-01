@@ -14,7 +14,7 @@ import { SignupComponent } from '../components/signup/signup.component';
 import { DashboardComponent } from '../components/admin-page/dashboard/dashboard.component';
 import { JobsComponent } from '../components/jobs/jobs.component';
 import { ManageStudentComponent } from '../components/faculty-page/manage-student/manage-student.component';
-import { ReportsComponent } from '../components/faculty-page/reports/reports.component';
+import { ReportsFacComponent } from '../components/faculty-page/reports/reports.component';
 import { AcademicComponent } from '../components/faculty-page/academic/academic.component';
 import { TraineeRecordsComponent } from '../components/faculty-page/trainee-records/trainee-records.component';
 import { CreateStudentprofileComponent } from '../components/faculty-page/create-studentprofile/create-studentprofile.component';
@@ -37,6 +37,7 @@ export const AppRoutes: Routes = [
     { path: 'companypage', component: CompanyPageComponent },
      { path: 'jobs', component: JobsComponent },
      { path: 'managestudent', component: ManageStudentComponent },
+     { path: 'reportsfac', component: ReportsFacComponent },
      { path: 'reports', component: ReportsComponent },
      { path: 'academic', component: AcademicComponent },        
      { path: 'traineerecords', component: TraineeRecordsComponent },
