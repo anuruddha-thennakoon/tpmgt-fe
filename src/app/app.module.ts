@@ -41,6 +41,7 @@ import{CreateResumeComponent} from './components/create-resume/create-resume.com
 import {EditStudentProfileComponent} from './components/edit-student-profile/edit-student-profile.component';
 import{ApplyJobComponent} from './components/apply-job/apply-job.component';
 import {StudentInquiryComponent} from './components/student-inquiry/student-inquiry.component';
+import {StudentHelpComponent} from './components/student-help/student-help.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +64,8 @@ import {StudentInquiryComponent} from './components/student-inquiry/student-inqu
     CreateResumeComponent,
     EditStudentProfileComponent,
     ApplyJobComponent,
-    StudentInquiryComponent
+    StudentInquiryComponent,
+    StudentHelpComponent
   ],
   imports: [
     FormsModule,

@@ -19,7 +19,7 @@ import{CreateResumeComponent} from '../components/create-resume/create-resume.co
 import {EditStudentProfileComponent} from '../components/edit-student-profile/edit-student-profile.component';
 import {ApplyJobComponent} from '../components/apply-job/apply-job.component';
 import {StudentInquiryComponent} from '../components/student-inquiry/student-inquiry.component';
-
+import {StudentHelpComponent} from '../components/student-help/student-help.component';
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
@@ -32,6 +32,7 @@ export const AppRoutes: Routes = [
        { path: 'editstudentprofile', component: EditStudentProfileComponent },
        {path: 'applyjob', component:ApplyJobComponent},
        {path:'studentinquiry', component:StudentInquiryComponent},
+       {path:'studenthelp', component:StudentHelpComponent},
     {
         path: 'adminpage',
         component: AdminPageComponent,
