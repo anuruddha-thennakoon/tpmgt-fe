@@ -15,7 +15,9 @@ import { DashboardComponent } from '../components/admin-page/dashboard/dashboard
 import { JobsComponent } from '../components/jobs/jobs.component';
 import { ManageStudentComponent } from '../components/faculty-page/manage-student/manage-student.component';
 import { ReportsComponent } from '../components/faculty-page/reports/reports.component';
+import { AcademicComponent } from '../components/faculty-page/academic/academic.component';
 import { TraineeRecordsComponent } from '../components/faculty-page/trainee-records/trainee-records.component';
+import { CreateStudentprofileComponent } from '../components/faculty-page/create-studentprofile/create-studentprofile.component';
 import {StudentCommonNavigationComponent} from '../components/student-common-navigation/student-common-navigation.component';
 import {FacultyCommonNavigationComponent} from '../components/faculty-page/faculty-common-navigation/faculty-common-navigation.component';
 import {StudentProfileComponent} from '../components/student-profile/student-profile.component';
@@ -32,14 +34,17 @@ export const AppRoutes: Routes = [
     { path: 'companypage', component: CompanyPageComponent },
      { path: 'jobs', component: JobsComponent },
      { path: 'managestudent', component: ManageStudentComponent },
-     { path: 'reports', component: ReportsComponent },     
+     { path: 'reports', component: ReportsComponent },
+     { path: 'academic', component: AcademicComponent },        
      { path: 'traineerecords', component: TraineeRecordsComponent },
+     { path: 'createstudentprofile', component: CreateStudentprofileComponent},
       { path: 'studentprofile', component: StudentProfileComponent },
       { path: 'createresume', component: CreateResumeComponent },
        { path: 'editstudentprofile', component: EditStudentProfileComponent },
        {path: 'applyjob', component:ApplyJobComponent},
        {path:'studentinquiry', component:StudentInquiryComponent},
        {path:'studenthelp', component:StudentHelpComponent},
+
     {
         path: 'adminpage',
         component: AdminPageComponent,
