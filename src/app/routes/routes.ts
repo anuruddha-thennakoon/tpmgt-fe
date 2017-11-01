@@ -15,6 +15,9 @@ import { DashboardComponent } from '../components/admin-page/dashboard/dashboard
 import { JobsComponent } from '../components/jobs/jobs.component';
 import {StudentCommonNavigationComponent} from '../components/student-common-navigation/student-common-navigation.component';
 import {StudentProfileComponent} from '../components/student-profile/student-profile.component';
+import { CompanyProfileComponent } from '../components/company-page/company-profile/company-profile.component';
+import { PublishVacanciesComponent } from '../components/company-page/publish-vacancies/publish-vacancies.component';
+import { ReportsComponent } from '../components/company-page/reports/reports.component';
 import{CreateResumeComponent} from '../components/create-resume/create-resume.component';
 import {EditStudentProfileComponent} from '../components/edit-student-profile/edit-student-profile.component';
 import {ApplyJobComponent} from '../components/apply-job/apply-job.component';
@@ -43,7 +46,18 @@ export const AppRoutes: Routes = [
             }
         ]
     },
-
+    {
+                path: 'companyProfile',
+                component : CompanyProfileComponent
+    },
+    {
+        path: 'publishVacancies',
+        component : PublishVacanciesComponent
+    },
+    {
+        path: 'reports',
+        component : ReportsComponent
+    }
     
 
 ]
