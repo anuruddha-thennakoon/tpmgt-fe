@@ -4,17 +4,6 @@ import { RouterModule } from '@angular/router';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import 'hammerjs';
-
-import {
-  MdInputModule,
-  // MaterialModule,
-  MdDatepickerModule,
-  MdNativeDateModule,
-  MdSliderModule,
-  MdProgressSpinnerModule
-} from '@angular/material';
-
 import { StoreService } from './services/store.service';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -43,6 +32,11 @@ import { PublishVacanciesComponent } from './components/company-page/publish-vac
 import { ReportsComponent } from './components/company-page/reports/reports.component';
 
 
+import{CreateResumeComponent} from './components/create-resume/create-resume.component';
+import {EditStudentProfileComponent} from './components/edit-student-profile/edit-student-profile.component';
+import{ApplyJobComponent} from './components/apply-job/apply-job.component';
+import {StudentInquiryComponent} from './components/student-inquiry/student-inquiry.component';
+import {StudentHelpComponent} from './components/student-help/student-help.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,17 +60,17 @@ import { ReportsComponent } from './components/company-page/reports/reports.comp
     CompanyProfileComponent,
     PublishVacanciesComponent,
     ReportsComponent,
+    CreateResumeComponent,
+    EditStudentProfileComponent,
+    ApplyJobComponent,
+    StudentInquiryComponent,
+    StudentHelpComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     RouterModule,
     BrowserAnimationsModule,
-    MdInputModule,
-    MdDatepickerModule,
-    MdNativeDateModule,
-    MdSliderModule,
-    MdProgressSpinnerModule,
     RouterModule.forRoot(AppRoutes),
   ],
   providers: [StoreService],

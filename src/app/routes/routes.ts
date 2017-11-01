@@ -18,7 +18,11 @@ import {StudentProfileComponent} from '../components/student-profile/student-pro
 import { CompanyProfileComponent } from '../components/company-page/company-profile/company-profile.component';
 import { PublishVacanciesComponent } from '../components/company-page/publish-vacancies/publish-vacancies.component';
 import { ReportsComponent } from '../components/company-page/reports/reports.component';
-
+import{CreateResumeComponent} from '../components/create-resume/create-resume.component';
+import {EditStudentProfileComponent} from '../components/edit-student-profile/edit-student-profile.component';
+import {ApplyJobComponent} from '../components/apply-job/apply-job.component';
+import {StudentInquiryComponent} from '../components/student-inquiry/student-inquiry.component';
+import {StudentHelpComponent} from '../components/student-help/student-help.component';
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
@@ -27,6 +31,11 @@ export const AppRoutes: Routes = [
     { path: 'companypage', component: CompanyPageComponent },
      { path: 'jobs', component: JobsComponent },
       { path: 'studentprofile', component: StudentProfileComponent },
+      { path: 'createresume', component: CreateResumeComponent },
+       { path: 'editstudentprofile', component: EditStudentProfileComponent },
+       {path: 'applyjob', component:ApplyJobComponent},
+       {path:'studentinquiry', component:StudentInquiryComponent},
+       {path:'studenthelp', component:StudentHelpComponent},
     {
         path: 'adminpage',
         component: AdminPageComponent,
