@@ -42,6 +42,8 @@ import {AdminCommonNavigationComponent} from './components/admin-common-navigati
 import{AdminCompanyViewComponent} from './components/admin-company-view/admin-company-view.component';
 import{AdminCreateAccountComponent} from './components/admin-create-account/admin-create-account.component';
 import { CompanyCommonNavigationComponent } from './components/company-page/company-common-navigation/company-common-navigation.component';
+import { CompanyInternComponent } from './components/company-page/company-intern/company-intern.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,7 +76,8 @@ import { CompanyCommonNavigationComponent } from './components/company-page/comp
     AdminCommonNavigationComponent,
     AdminCompanyViewComponent,
     AdminCreateAccountComponent,
-    CompanyCommonNavigationComponent
+    CompanyCommonNavigationComponent,
+    CompanyInternComponent
   ],
   imports: [
     FormsModule,

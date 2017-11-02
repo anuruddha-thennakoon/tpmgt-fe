@@ -27,6 +27,8 @@ import{AdminInquiryViewComponent} from '../components/admin-inquiry-view/admin-i
 import {AdminCommonNavigationComponent} from '../components/admin-common-navigation/admin-common-navigation.component';
 import {AdminCompanyViewComponent} from '../components/admin-company-view/admin-company-view.component';
 import {AdminCreateAccountComponent} from '../components/admin-create-account/admin-create-account.component';
+import { CompanyInternComponent } from '../components/company-page/company-intern/company-intern.component';
+
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
@@ -64,7 +66,10 @@ export const AppRoutes: Routes = [
     {
         path: 'reports',
         component : ReportsComponent
+    },
+    {
+        path: 'interns',
+        component: CompanyInternComponent
     }
-    
 
 ]
