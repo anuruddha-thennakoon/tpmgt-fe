@@ -1,0 +1,36 @@
+.header{
+	height:50px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6f32f2+0,5181e9+52,22cadd+100 */
+background: #6f32f2; /* Old browsers */
+background: -moz-linear-gradient(left, #6f32f2 0%, #5181e9 52%, #22cadd 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #6f32f2 0%,#5181e9 52%,#22cadd 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #6f32f2 0%,#5181e9 52%,#22cadd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f32f2', endColorstr='#22cadd',GradientType=1 ); /* IE6-9 */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size:18px;	
+	
+}
+.logo{
+	text-align:left;
+}
+
+.header-links{
+	text-align:right;
+     margin-top:10px;
+}
+
+.header-links a{
+	text-decoration:none;
+	color:#ffffff !important;
+	
+    font-size: 18px;
+    margin-right: 20px;
+ 
+     cursor:pointer !important;
+	border-bottom: 2px solid transparent;
+
+}
+
+.header-links a:hover{
+    border-bottom: 2px solid #ffffff;
+}
