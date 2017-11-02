@@ -41,6 +41,7 @@ import{AdminInquiryViewComponent} from './components/admin-inquiry-view/admin-in
 import {AdminCommonNavigationComponent} from './components/admin-common-navigation/admin-common-navigation.component';
 import{AdminCompanyViewComponent} from './components/admin-company-view/admin-company-view.component';
 import{AdminCreateAccountComponent} from './components/admin-create-account/admin-create-account.component';
+import { CompanyCommonNavigationComponent } from './components/company-page/company-common-navigation/company-common-navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,7 +73,8 @@ import{AdminCreateAccountComponent} from './components/admin-create-account/admi
     AdminInquiryViewComponent,
     AdminCommonNavigationComponent,
     AdminCompanyViewComponent,
-    AdminCreateAccountComponent
+    AdminCreateAccountComponent,
+    CompanyCommonNavigationComponent
   ],
   imports: [
     FormsModule,
