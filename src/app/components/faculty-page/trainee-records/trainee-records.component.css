@@ -31,10 +31,10 @@
 }
 
 table>thead>tr>th{
-    text-align: center;
+    /* text-align: center; */
 }
 table>tbody>tr>td{
-    text-align: center;
+    /* text-align: center; */
 }
 
 

@@ -1,39 +1,28 @@
-.create-resume-text{
-    margin-top:50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:34px;
-    text-align: center;
-    color:#498DE7;
-
-}
-
-.container{
-    width:70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:100px;
-}
-h3{
-    text-align: center;
-    margin-top:10px;
-    margin-bottom:30px;
-}
-
-
-.form-group{
-    width:60%;
+.edit-student-profile-inner{
     
-}
-
-.button{
-border-radius: 8px;
-padding: 10px 24px;
-font-size: 15px;
-background-color: #f41336;
-color: white; -webkit-transition-duration: 0.4s; /* Safari */
-transition-duration: 0.3s;
-}
-.button:hover {
-    background-color:#ec6960;  /* Green */
-    color: white;
-}
+    
+         width:70%;
+        height:700px;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top:40px;
+        box-shadow: 10px 10px 5px  #888888;
+        background:#f5f5f5;
+    }
+    
+    h3{
+        text-align: center;
+        margin-top:10px;
+        margin-bottom:30px;
+    }
+    
+    .edit-student-profile-form{
+        width:70%;
+    margin-left:auto;
+        margin-left:auto;
+    
+    }
+    .form-group{
+        width:60%;
+        
+    }

@@ -1,0 +1,121 @@
+ .icon-text{    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    color:#3DA1E4;
+}   
+
+.reports{
+    width:70%;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+}
+.job-text{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    color:#3DA1E4;
+    margin-top:60px;
+    margin-bottom: 30px;
+}
+
+.vacancies-table{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+table>thead>tr>th{
+    text-align: center;
+}
+table>tbody>tr>td{
+    text-align: center;
+}
+
+
+.navigation-ul{
+  
+    width:60%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:25px;
+    list-style-type: none;
+}
+
+
+.list{
+    border-radius: 8px;
+    font-size: 20px;
+    /* background-color: rgb(202, 230, 238); */
+    /* color: #008CBA(255, 255, 255); -webkit-transition-duration: 0.4s;  */
+    transition-duration: 0.3s;
+    }
+ 
+    
+.active{
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: rgb(202, 230, 238);
+    color: #008CBA(255, 255, 255); -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.3s;
+}
+
+
+.job-text{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color:#3DA1E4;
+    margin-top:60px;
+    margin-bottom: 30px;
+}
+.vacancies{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+}
+
+.searchbar{
+    margin-left: 700px;
+    margin-right: 30px;
+    /* margin-top:10px; */
+    margin-bottom:20px;
+    
+}
+.searchbutton{
+    margin-left: 1100px;
+    margin-right: 20px;
+    margin-top:0px;
+}
+
+.vacancies-table{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+
+
+
+
+.button{
+    width:auto;
+    border-radius: 8px;
+    padding: 5px 12px;
+    font-size: 11px;
+    background-color: #f41336;
+    color: white; -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.1s;
+    }
+    .button:hover {
+        background-color:#ec6960;  /* Green */
+        color: white;
+    }
+
+.form-control{
+    width:110%;
+}

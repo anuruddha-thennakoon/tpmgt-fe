@@ -34,7 +34,6 @@
     }
 
 
-
 .navigation-ul{
   
     width:60%;
@@ -50,11 +49,11 @@
     /* text-align: center; */
     font-size: 15px;
     background-color: rgb(202, 230, 238);
-    color: #008CBA(255, 255, 255); -webkit-transition-duration: 0.4s; /* Safari */
+    color: #008CBA(255, 255, 255); -webkit-transition-duration: 0.2s; 
     transition-duration: 0.3s;
     }
     .list:hover {
-        background-color:#ec6960;  /* Green */
-        color: #008CBA;
+        background-color:#9AC0CD;  
+        color: white;
     }
     
