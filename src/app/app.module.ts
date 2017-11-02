@@ -86,8 +86,6 @@ import { CompanyInternComponent } from './components/company-page/company-intern
     RouterModule.forRoot(AppRoutes),
     PDFExportModule,
   ],
-  providers: [StoreService],
-  bootstrap: [AppComponent],
   providers: [
     StoreService,
     CompanyService

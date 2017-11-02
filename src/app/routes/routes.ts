@@ -52,6 +52,10 @@ export const AppRoutes: Routes = [
             {
                 path: 'dashboard',
                 component: DashboardComponent
+            },
+            {
+                path: 'inquries',
+                component: DashboardComponent
             }
         ]
     },
