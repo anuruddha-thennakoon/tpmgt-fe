@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CompanyService } from '../../../services/callers/company.service';
+import { CompanyModel } from '../../../models/company.model';
 import { AdminNavigationComponent } from './admin-navigation.component';
 
 describe('AdminNavigationComponent', () => {
