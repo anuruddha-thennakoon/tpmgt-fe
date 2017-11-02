@@ -13,36 +13,36 @@ import { SendinquiriesComponent } from '../components/sendinquiries/sendinquirie
 import { SignupComponent } from '../components/signup/signup.component';
 import { DashboardComponent } from '../components/admin-page/dashboard/dashboard.component';
 import { JobsComponent } from '../components/jobs/jobs.component';
-import {StudentCommonNavigationComponent} from '../components/student-common-navigation/student-common-navigation.component';
-import {StudentProfileComponent} from '../components/student-profile/student-profile.component';
+import { StudentCommonNavigationComponent } from '../components/student-common-navigation/student-common-navigation.component';
+import { StudentProfileComponent } from '../components/student-profile/student-profile.component';
 import { CompanyProfileComponent } from '../components/company-page/company-profile/company-profile.component';
 import { PublishVacanciesComponent } from '../components/company-page/publish-vacancies/publish-vacancies.component';
 import { ReportsComponent } from '../components/company-page/reports/reports.component';
-import{CreateResumeComponent} from '../components/create-resume/create-resume.component';
-import {EditStudentProfileComponent} from '../components/edit-student-profile/edit-student-profile.component';
-import {ApplyJobComponent} from '../components/apply-job/apply-job.component';
-import {StudentInquiryComponent} from '../components/student-inquiry/student-inquiry.component';
-import {StudentHelpComponent} from '../components/student-help/student-help.component';
-import{AdminInquiryViewComponent} from '../components/admin-inquiry-view/admin-inquiry-view.component';
-import {AdminCommonNavigationComponent} from '../components/admin-common-navigation/admin-common-navigation.component';
-import {AdminCompanyViewComponent} from '../components/admin-company-view/admin-company-view.component';
-import {AdminCreateAccountComponent} from '../components/admin-create-account/admin-create-account.component';
+import { CreateResumeComponent } from '../components/create-resume/create-resume.component';
+import { EditStudentProfileComponent } from '../components/edit-student-profile/edit-student-profile.component';
+import { ApplyJobComponent } from '../components/apply-job/apply-job.component';
+import { StudentInquiryComponent } from '../components/student-inquiry/student-inquiry.component';
+import { StudentHelpComponent } from '../components/student-help/student-help.component';
+import { AdminInquiryViewComponent } from '../components/admin-inquiry-view/admin-inquiry-view.component';
+import { AdminCommonNavigationComponent } from '../components/admin-common-navigation/admin-common-navigation.component';
+import { AdminCompanyViewComponent } from '../components/admin-company-view/admin-company-view.component';
+import { AdminCreateAccountComponent } from '../components/admin-create-account/admin-create-account.component';
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
     { path: 'studentpage', component: StudentPageComponent },
     { path: 'facultypage', component: FacultyPageComponent },
     { path: 'companypage', component: CompanyPageComponent },
-     { path: 'jobs', component: JobsComponent },
-      { path: 'studentprofile', component: StudentProfileComponent },
-      { path: 'createresume', component: CreateResumeComponent },
-       { path: 'editstudentprofile', component: EditStudentProfileComponent },
-       {path: 'applyjob', component:ApplyJobComponent},
-       {path:'studentinquiry', component:StudentInquiryComponent},
-       {path:'studenthelp', component:StudentHelpComponent},
-       {path:'admininquiryview',component:AdminInquiryViewComponent},
-       {path:'admincompanyview',component:AdminCompanyViewComponent},
-        {path:'admincreateaccount',component:AdminCreateAccountComponent},
+    { path: 'jobs', component: JobsComponent },
+    { path: 'studentprofile', component: StudentProfileComponent },
+    { path: 'createresume', component: CreateResumeComponent },
+    { path: 'editstudentprofile', component: EditStudentProfileComponent },
+    { path: 'applyjob', component: ApplyJobComponent },
+    { path: 'studentinquiry', component: StudentInquiryComponent },
+    { path: 'studenthelp', component: StudentHelpComponent },
+    { path: 'admininquiryview', component: AdminInquiryViewComponent },
+    { path: 'admincompanyview', component: AdminCompanyViewComponent },
+    { path: 'admincreateaccount', component: AdminCreateAccountComponent },
     {
         path: 'adminpage',
         component: AdminPageComponent,
@@ -54,17 +54,17 @@ export const AppRoutes: Routes = [
         ]
     },
     {
-                path: 'companyProfile',
-                component : CompanyProfileComponent
+        path: 'companyProfile',
+        component: CompanyProfileComponent
     },
     {
         path: 'publishVacancies',
-        component : PublishVacanciesComponent
+        component: PublishVacanciesComponent
     },
     {
         path: 'reports',
-        component : ReportsComponent
+        component: ReportsComponent
     }
-    
+
 
 ]
