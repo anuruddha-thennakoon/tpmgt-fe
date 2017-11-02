@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CompanyService } from '../../../services/callers/company.service';
+import { CompanyModel } from '../../../models/company.model';
 
 @Component({
   selector: 'app-admin-navigation',
@@ -8,14 +10,34 @@ import { Router } from '@angular/router';
 })
 export class AdminNavigationComponent implements OnInit {
 
+  newCommpany: CompanyModel = new CompanyModel();
+
   constructor(
-    private router: Router
+    private router: Router,
+    private company: CompanyService
   ) { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  goDashboard() {
+    this.router.navigateByUrl('/adminpage/dashboard');
   }
 
-  goDashboard(){
-    this.router.navigateByUrl('/adminpage/dashboard');
+  viewAllCompanies() {
+    this.company.getALLCompanies()
+      .then(result => {
+        console.log(result);
+      }).catch(error => {
+        console.log(error);
+      });
+  }
+
+  createCompany() {
+    this.company.createCompany(this.newCommpany)
+      .then(result => {
+        console.log(result);
+      }).catch(error => {
+        console.log(error);
+      });
   }
 }

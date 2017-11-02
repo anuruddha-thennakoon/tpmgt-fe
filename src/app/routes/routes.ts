@@ -13,6 +13,7 @@ import { SendinquiriesComponent } from '../components/sendinquiries/sendinquirie
 import { SignupComponent } from '../components/signup/signup.component';
 import { DashboardComponent } from '../components/admin-page/dashboard/dashboard.component';
 import { JobsComponent } from '../components/jobs/jobs.component';
+<<<<<<< HEAD
 import { ManageStudentComponent } from '../components/faculty-page/manage-student/manage-student.component';
 import { ReportsFacComponent } from '../components/faculty-page/reports/reports.component';
 import { PublishmentsComponent } from '../components/faculty-page/publishments/publishments.component';
@@ -22,6 +23,10 @@ import { CreateStudentprofileComponent } from '../components/faculty-page/create
 import {StudentCommonNavigationComponent} from '../components/student-common-navigation/student-common-navigation.component';
 import {FacultyCommonNavigationComponent} from '../components/faculty-page/faculty-common-navigation/faculty-common-navigation.component';
 import {StudentProfileComponent} from '../components/student-profile/student-profile.component';
+=======
+import { StudentCommonNavigationComponent } from '../components/student-common-navigation/student-common-navigation.component';
+import { StudentProfileComponent } from '../components/student-profile/student-profile.component';
+>>>>>>> d5f8b4f4b4366c56515db156469fd4706e663661
 import { CompanyProfileComponent } from '../components/company-page/company-profile/company-profile.component';
 import { PublishVacanciesComponent } from '../components/company-page/publish-vacancies/publish-vacancies.component';
 import { ReportsComponent } from '../components/company-page/reports/reports.component';
@@ -34,6 +39,8 @@ import{AdminInquiryViewComponent} from '../components/admin-inquiry-view/admin-i
 import {AdminCommonNavigationComponent} from '../components/admin-common-navigation/admin-common-navigation.component';
 import {AdminCompanyViewComponent} from '../components/admin-company-view/admin-company-view.component';
 import {AdminCreateAccountComponent} from '../components/admin-create-account/admin-create-account.component';
+import { CompanyInternComponent } from '../components/company-page/company-intern/company-intern.component';
+
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
@@ -69,17 +76,21 @@ export const AppRoutes: Routes = [
         ]
     },
     {
-                path: 'companyProfile',
-                component : CompanyProfileComponent
+        path: 'companyProfile',
+        component: CompanyProfileComponent
     },
     {
         path: 'publishVacancies',
-        component : PublishVacanciesComponent
+        component: PublishVacanciesComponent
     },
     {
         path: 'reports',
         component : ReportsComponent
+    },
+    {
+        path: 'interns',
+        component: CompanyInternComponent
     }
-    
+
 
 ]

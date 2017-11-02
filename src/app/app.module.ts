@@ -3,10 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { StoreService } from './services/store.service';
-
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+//Services
+import { StoreService } from './services/store.service';
+import { CompanyService } from './services/callers/company.service';
 
 import { AppRoutes } from './routes/routes';
 import { AppComponent } from './app.component';
@@ -33,22 +34,23 @@ import { TraineeRecordsComponent } from './components/faculty-page/trainee-recor
 import { CreateStudentprofileComponent } from './components/faculty-page/create-studentprofile/create-studentprofile.component';
 import {StudentCommonNavigationComponent} from './components/student-common-navigation/student-common-navigation.component';
 import {FacultyCommonNavigationComponent} from './components/faculty-page/faculty-common-navigation/faculty-common-navigation.component';
-import {StudentProfileComponent} from './components/student-profile/student-profile.component';
+import { StudentProfileComponent } from './components/student-profile/student-profile.component';
 import { CompanyNavigationComponent } from './components/company-page//company-navigation/company-navigation.component';
 import { CompanyProfileComponent } from './components/company-page/company-profile/company-profile.component';
 import { PublishVacanciesComponent } from './components/company-page/publish-vacancies/publish-vacancies.component';
 import { ReportsComponent } from './components/company-page/reports/reports.component';
+import { CreateResumeComponent } from './components/create-resume/create-resume.component';
+import { EditStudentProfileComponent } from './components/edit-student-profile/edit-student-profile.component';
+import { ApplyJobComponent } from './components/apply-job/apply-job.component';
+import { StudentInquiryComponent } from './components/student-inquiry/student-inquiry.component';
+import { StudentHelpComponent } from './components/student-help/student-help.component';
+import { AdminInquiryViewComponent } from './components/admin-inquiry-view/admin-inquiry-view.component';
+import { AdminCommonNavigationComponent } from './components/admin-common-navigation/admin-common-navigation.component';
+import { AdminCompanyViewComponent } from './components/admin-company-view/admin-company-view.component';
+import { AdminCreateAccountComponent } from './components/admin-create-account/admin-create-account.component';
+import { CompanyCommonNavigationComponent } from './components/company-page/company-common-navigation/company-common-navigation.component';
+import { CompanyInternComponent } from './components/company-page/company-intern/company-intern.component';
 
-
-import{CreateResumeComponent} from './components/create-resume/create-resume.component';
-import {EditStudentProfileComponent} from './components/edit-student-profile/edit-student-profile.component';
-import{ApplyJobComponent} from './components/apply-job/apply-job.component';
-import {StudentInquiryComponent} from './components/student-inquiry/student-inquiry.component';
-import {StudentHelpComponent} from './components/student-help/student-help.component';
-import{AdminInquiryViewComponent} from './components/admin-inquiry-view/admin-inquiry-view.component';
-import {AdminCommonNavigationComponent} from './components/admin-common-navigation/admin-common-navigation.component';
-import{AdminCompanyViewComponent} from './components/admin-company-view/admin-company-view.component';
-import{AdminCreateAccountComponent} from './components/admin-create-account/admin-create-account.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -88,7 +90,9 @@ import{AdminCreateAccountComponent} from './components/admin-create-account/admi
     AdminInquiryViewComponent,
     AdminCommonNavigationComponent,
     AdminCompanyViewComponent,
-    AdminCreateAccountComponent
+    AdminCreateAccountComponent,
+    CompanyCommonNavigationComponent,
+    CompanyInternComponent
   ],
   imports: [
     FormsModule,
@@ -97,7 +101,10 @@ import{AdminCreateAccountComponent} from './components/admin-create-account/admi
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes),
   ],
-  providers: [StoreService],
+  providers: [
+    StoreService,
+    CompanyService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
