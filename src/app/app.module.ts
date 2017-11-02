@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
+import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { StoreService } from './services/store.service';
@@ -80,8 +80,10 @@ import{AdminCreateAccountComponent} from './components/admin-create-account/admi
     RouterModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(AppRoutes),
+    PDFExportModule,
   ],
   providers: [StoreService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }

@@ -26,7 +26,7 @@
               </div>
               <div class="col-md-5 cv-image">
                   <label for="file-input">
-                    <img src="../../assets/images/placeholder.jpg"/>
+                    <img id="profile-pic" src="../../assets/images/placeholder.jpg"/>
                  </label>
                 <input id="file-input" type="file"/>
               </div>
@@ -81,9 +81,13 @@
 
         </div>
 
-        <button class="btn btn-primary btn-create-resume">Create Resume</button>
-
-
+        <!--<button class="btn btn-primary btn-create-resume">Create Resume</button>-->
+        <button kendo-button (click)="pdf.saveAs('resume.pdf')">
+        Create Resume
+      </button>
+      <kendo-pdf-export #pdf paperSize="A4" margin="2cm">
+          
+        </kendo-pdf-export>
      </form>
     </div>
 </div>
