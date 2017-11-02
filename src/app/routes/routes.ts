@@ -18,9 +18,7 @@ import { CompanyProfileComponent } from '../components/company-page/company-prof
 import { PublishVacanciesComponent } from '../components/company-page/publish-vacancies/publish-vacancies.component';
 import { ReportsComponent } from '../components/company-page/reports/reports.component';
 import{CreateResumeComponent} from '../components/student-page/create-resume/create-resume.component';
-import {EditStudentProfileComponent} from '../components/edit-student-profile/edit-student-profile.component';
-import {ApplyJobComponent} from '../components/apply-job/apply-job.component';
-import {StudentInquiryComponent} from '../components/student-inquiry/student-inquiry.component';
+
 import {StudentHelpComponent} from '../components/student-help/student-help.component';
 import{AdminInquiryViewComponent} from '../components/admin-inquiry-view/admin-inquiry-view.component';
 import {AdminCommonNavigationComponent} from '../components/admin-common-navigation/admin-common-navigation.component';
@@ -51,9 +49,8 @@ export const AppRoutes: Routes = [
    
     
     
-    { path: 'editstudentprofile', component: EditStudentProfileComponent },
-    { path: 'applyjob', component: ApplyJobComponent },
-    { path: 'studentinquiry', component: StudentInquiryComponent },
+    
+    
     { path: 'studenthelp', component: StudentHelpComponent },
     { path: 'admininquiryview', component: AdminInquiryViewComponent },
     { path: 'admincompanyview', component: AdminCompanyViewComponent },
