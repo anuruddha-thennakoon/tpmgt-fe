@@ -41,10 +41,7 @@ import { AdminCommonNavigationComponent } from './components/admin-common-naviga
 import { AdminCompanyViewComponent } from './components/admin-company-view/admin-company-view.component';
 import { AdminCreateAccountComponent } from './components/admin-create-account/admin-create-account.component';
 import { CompanyCommonNavigationComponent } from './components/company-page/company-common-navigation/company-common-navigation.component';
-<<<<<<< HEAD
 import { CompanyInternComponent } from './components/company-page/company-intern/company-intern.component';
-=======
->>>>>>> cc69040aa403df0ac7fad8d874ebb33f43267fbb
 
 @NgModule({
   declarations: [
