@@ -13,7 +13,7 @@ export class CompanyService {
   getALLCompanies() {
     return new Promise((resolve, reject) => {
       this.axios
-        .get(this.api.COMPANY())
+        .get('http://127.0.0.1:8000/api/company')
         .then(result => resolve(result.data))
         .catch(err => reject(err));
     });
@@ -22,7 +22,7 @@ export class CompanyService {
   createCompany(data) {
     return new Promise((resolve, reject) => {
       this.axios
-        .post(this.api.COMPANY(), data)
+        .post('http://127.0.0.1:8000/api/company', data)
         .then(result => resolve(result.data))
         .catch(err => reject(err));
     });
