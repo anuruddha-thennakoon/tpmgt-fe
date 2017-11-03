@@ -1,16 +1,12 @@
 
 .navigation{
-   
     width:100%;
       margin-left: auto;
     margin-right:auto;
-    /*margin-right:auto;*/
    text-align: center;
-  
 }
 .navigation-ul{
-  
-    width:60%;
+    width:100%;
     margin-left: auto;
     margin-right:auto;
     margin-top:25px;
@@ -52,22 +48,6 @@
 .navigation ul li:hover .icon-text{
     color:#FFFFFF;
 }
-/*.navigation-ul-one{
-background: #D54A50;
-}
-
-.navigation-ul-two{
-    background:#5974AD;
-}
-
-.navigation-ul-three{
-    background: #F49032;
-}
-
-.navigation-ul-four{
-    background:#E95F6A;
-}*/
-
 .icon-text{
     color:#ffffff;
 }
