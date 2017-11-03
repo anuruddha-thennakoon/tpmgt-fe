@@ -30,18 +30,19 @@
 
 }
 
-table>thead>tr>th{
-    /* text-align: center; */
-}
-table>tbody>tr>td{
-    /* text-align: center; */
-}
 
+.search{
+    border-radius: 6px;
+    padding: 6px 24px;
+    font-size: 15px;
+    width:70%;
+
+}
 
 .button{
     width:auto;
     border-radius: 8px;
-    padding: 10px 24px;
+    padding: 8px 24px;
     font-size: 15px;
     background-color: #f41336;
     color: white; -webkit-transition-duration: 0.4s; /* Safari */

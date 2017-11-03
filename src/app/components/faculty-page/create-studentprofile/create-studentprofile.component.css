@@ -1,28 +1,42 @@
-.edit-student-profile-inner{
+html,body{
     
-    
-         width:70%;
-        height:700px;
-        margin-left: auto;
-        margin-right:auto;
-        margin-top:40px;
-        box-shadow: 10px 10px 5px  #888888;
-        background:#f5f5f5;
-    }
-    
-    h3{
-        text-align: center;
-        margin-top:10px;
-        margin-bottom:30px;
-    }
-    
-    .edit-student-profile-form{
-        width:70%;
-    margin-left:auto;
-        margin-left:auto;
-    
-    }
-    .form-group{
-        width:60%;
-        
-    }
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6f32f2+0,5181e9+52,22cadd+100 */
+background: #6f32f2; /* Old browsers */
+background: -moz-linear-gradient(45deg, #6f32f2 0%, #5181e9 52%, #22cadd 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #6f32f2 0%,#5181e9 52%,#22cadd 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #6f32f2 0%,#5181e9 52%,#22cadd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f32f2', endColorstr='#22cadd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+background-repeat:no-repeat;
+height:100vh;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+}
+
+.body-content{
+
+margin-top:200px;
+
+}
+
+.home-page-text{
+height: 200px;
+}
+
+.home-title{
+
+font-size:54px;
+color:#ffffff;
+text-align:center;
+
+}
+
+.home-subtitle{
+font-size:24px;
+color:#ffffff;
+text-align:center;
+}
+
+.home-page-navigation{
+    height:100px;
+}
