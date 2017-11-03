@@ -1,10 +1,4 @@
-
-
-
-
 html,body{
-	
-	
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6f32f2+0,5181e9+52,22cadd+100 */
 background: #6f32f2; /* Old browsers */
 background: -moz-linear-gradient(45deg, #6f32f2 0%, #5181e9 52%, #22cadd 100%); /* FF3.6-15 */
@@ -19,24 +13,18 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 margin: 0;
 }
 
-
-.body-content{
-  
+.body-content{  
 	margin-top:200px;
-	
 }
-
 
 .home-page-text{
     height: 200px;
 }
 
 .home-title{
-	
 	font-size:54px;
 	color:#ffffff;
 	text-align:center;
-	
 }
 
 .home-subtitle{

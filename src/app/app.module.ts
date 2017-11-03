@@ -34,12 +34,10 @@ import { CompanyProfileComponent } from './components/company-page/company-profi
 import { PublishVacanciesComponent } from './components/company-page/publish-vacancies/publish-vacancies.component';
 import { ReportsComponent } from './components/company-page/reports/reports.component';
 import { CreateResumeComponent } from './components/student-page/create-resume/create-resume.component';
-
 import { StudentHelpComponent } from './components/student-help/student-help.component';
-import { AdminInquiryViewComponent } from './components/admin-inquiry-view/admin-inquiry-view.component';
-import { AdminCommonNavigationComponent } from './components/admin-common-navigation/admin-common-navigation.component';
-import { AdminCompanyViewComponent } from './components/admin-company-view/admin-company-view.component';
-import { AdminCreateAccountComponent } from './components/admin-create-account/admin-create-account.component';
+import { AdminInquiryViewComponent } from './components/admin-page/admin-inquiry-view/admin-inquiry-view.component';
+import { AdminCompanyViewComponent } from './components/admin-page/admin-company-view/admin-company-view.component';
+import { AdminCreateAccountComponent } from './components/admin-page/admin-create-account/admin-create-account.component';
 import { CompanyCommonNavigationComponent } from './components/company-page/company-common-navigation/company-common-navigation.component';
 import { CompanyInternComponent } from './components/company-page/company-intern/company-intern.component';
 
@@ -66,10 +64,8 @@ import { CompanyInternComponent } from './components/company-page/company-intern
     PublishVacanciesComponent,
     ReportsComponent,
     CreateResumeComponent,
-    
     StudentHelpComponent,
     AdminInquiryViewComponent,
-    AdminCommonNavigationComponent,
     AdminCompanyViewComponent,
     AdminCreateAccountComponent,
     CompanyCommonNavigationComponent,

@@ -23,6 +23,22 @@ export class AdminNavigationComponent implements OnInit {
     this.router.navigateByUrl('/adminpage/dashboard');
   }
 
+  goInquiries() {
+    this.router.navigateByUrl('/adminpage/admininquiryview');
+  }
+
+  goStudentRecords() {
+    this.router.navigateByUrl('/adminpage/inquries');
+  }
+
+  goViewCompanies() {
+    this.router.navigateByUrl('/adminpage/admincompanyview');
+  }
+
+  goCreateAccount() {
+    this.router.navigateByUrl('/adminpage/admincreateaccount');
+  }
+
   viewAllCompanies() {
     this.company.getALLCompanies()
       .then(result => {
