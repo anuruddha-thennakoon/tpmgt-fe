@@ -15,16 +15,13 @@ import { StudentService } from './services/callers/student.service';
 import { AppRoutes } from './routes/routes';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { LoginComponent } from './components/login/login.component';
-import { TestComponent } from './components/test/test.component';
 import { StudentPageComponent } from './components/student-page/student-page.component';
 import { FacultyPageComponent } from './components/faculty-page/faculty-page.component';
 import { CompanyPageComponent } from './components/company-page/company-page.component';
 import { AdminPageComponent } from './components/admin-page/admin-page.component';
 import { StudentNavigationComponent } from './components/student-page/student-navigation/student-navigation.component';
 import { FacultyNavigationComponent } from './components/faculty-page/faculty-navigation/faculty-navigation.component';
-import { SendinquiriesComponent } from './components/sendinquiries/sendinquiries.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { AdminNavigationComponent } from './components/admin-page/admin-navigation/admin-navigation.component';
 import { DashboardComponent } from './components/admin-page/dashboard/dashboard.component';
@@ -34,7 +31,6 @@ import { PublishmentsComponent } from './components/faculty-page/publishments/pu
 import { AcademicComponent } from './components/faculty-page/academic/academic.component';
 import { TraineeRecordsComponent } from './components/faculty-page/trainee-records/trainee-records.component';
 import { CreateStudentprofileComponent } from './components/faculty-page/create-studentprofile/create-studentprofile.component';
-import { FacultyCommonNavigationComponent } from './components/faculty-page/faculty-common-navigation/faculty-common-navigation.component';
 import { JobsComponent } from './components/student-page/jobs/jobs.component';
 import { StudentProfileComponent } from './components/student-page/student-profile/student-profile.component';
 import { CompanyNavigationComponent } from './components/company-page//company-navigation/company-navigation.component';
@@ -42,27 +38,23 @@ import { CompanyProfileComponent } from './components/company-page/company-profi
 import { PublishVacanciesComponent } from './components/company-page/publish-vacancies/publish-vacancies.component';
 import { ReportsComponent } from './components/company-page/reports/reports.component';
 import { CreateResumeComponent } from './components/student-page/create-resume/create-resume.component';
-import { StudentHelpComponent } from './components/student-help/student-help.component';
+import { StudentHelpComponent } from './components/student-page/student-help/student-help.component';
 import { AdminInquiryViewComponent } from './components/admin-page/admin-inquiry-view/admin-inquiry-view.component';
 import { AdminCompanyViewComponent } from './components/admin-page/admin-company-view/admin-company-view.component';
 import { AdminCreateAccountComponent } from './components/admin-page/admin-create-account/admin-create-account.component';
-import { CompanyCommonNavigationComponent } from './components/company-page/company-common-navigation/company-common-navigation.component';
 import { CompanyInternComponent } from './components/company-page/company-intern/company-intern.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    SideBarComponent,
     LoginComponent,
-    TestComponent,
     StudentPageComponent,
     FacultyPageComponent,
     CompanyPageComponent,
     AdminPageComponent,
     StudentNavigationComponent,
     FacultyNavigationComponent,
-    SendinquiriesComponent,
     SignupComponent,
     AdminNavigationComponent,
     DashboardComponent,
@@ -77,8 +69,13 @@ import { CompanyInternComponent } from './components/company-page/company-intern
     AdminInquiryViewComponent,
     AdminCompanyViewComponent,
     AdminCreateAccountComponent,
-    CompanyCommonNavigationComponent,
-    CompanyInternComponent
+    CompanyInternComponent,
+    AcademicComponent,
+    TraineeRecordsComponent,
+    CreateStudentprofileComponent,
+    PublishmentsComponent,
+    ManageStudentComponent,
+    ReportsFacComponent
   ],
   imports: [
     FormsModule,
