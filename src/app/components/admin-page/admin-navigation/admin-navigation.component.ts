@@ -20,7 +20,7 @@ export class AdminNavigationComponent implements OnInit {
   ngOnInit() { }
 
   goDashboard() {
-    this.router.navigateByUrl('/adminpage/dashboard');
+    this.router.navigateByUrl('/adminpage/home');
   }
 
   goInquiries() {

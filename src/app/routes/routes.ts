@@ -87,7 +87,7 @@ export const AppRoutes: Routes = [
         component: AdminPageComponent,
         children: [
             {
-                path: 'dashboard',
+                path: 'home',
                 component: DashboardComponent
             },
             {
@@ -101,6 +101,11 @@ export const AppRoutes: Routes = [
             {
                 path: 'admincreateaccount',
                 component: AdminCreateAccountComponent
+            },
+            {
+                path: '',
+                redirectTo: 'home',
+                pathMatch: 'full'
             }
         ]
     },
