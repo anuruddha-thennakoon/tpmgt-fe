@@ -27,6 +27,7 @@ import { PublishmentsComponent } from '../components/faculty-page/publishments/p
 import { AcademicComponent } from '../components/faculty-page/academic/academic.component';
 import { TraineeRecordsComponent } from '../components/faculty-page/trainee-records/trainee-records.component';
 import { CompanyHomeComponent } from '../components/company-page/company-home/company-home.component';
+import { ViewStudentRecordsComponent } from '../components/admin-page/view-student-records/view-student-records.component';
 
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
@@ -92,16 +93,20 @@ export const AppRoutes: Routes = [
                 component: DashboardComponent
             },
             {
-                path: 'admininquiryview',
+                path: 'viewinquiry',
                 component: AdminInquiryViewComponent
             },
             {
-                path: 'admincompanyview',
+                path: 'viewcompany',
                 component: AdminCompanyViewComponent
             },
             {
-                path: 'admincreateaccount',
+                path: 'createaccount',
                 component: AdminCreateAccountComponent
+            },
+            {
+                path: 'records',
+                component: ViewStudentRecordsComponent
             },
             {
                 path: '',
