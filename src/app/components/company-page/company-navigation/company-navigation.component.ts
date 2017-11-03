@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { StoreService } from '../../../services/store.service';
 import { Router } from '@angular/router';
+import { CompanyService } from '../../../services/callers/company.service';
+import { CompanyModel } from '../../../models/company.model';
 
 @Component({
   selector: 'app-company-navigation',
@@ -17,9 +19,24 @@ export class CompanyNavigationComponent implements OnInit {
   ngOnInit() {
   }
 
-  goToProfile(){
-    this.router.navigateByUrl('/company-profile');
+  goDashboard() {
+    this.router.navigateByUrl('');
   }
 
+  goToProfile(){
+    this.router.navigateByUrl('/companypage/companyProfile');
+  }
+
+  goToPublishVacancy(){
+    this.router.navigateByUrl('/companypage/publishVacancies');
+  }
+
+  goToReports(){
+    this.router.navigateByUrl('/companypage/reports');
+  }
+  
+  goToInterns(){
+    this.router.navigateByUrl('/companypage/interns');
+  }
 
 }

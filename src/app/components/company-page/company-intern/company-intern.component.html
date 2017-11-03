@@ -1,3 +1,205 @@
-<p>
-  company-intern works!
-</p>
+<div class="report-form">
+  <br/><br/>
+  <div class="intern">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-1"><label for="StudentName">Search</label></div>
+      <div class="col-md-6">
+        <input type="text-felid" class="form-control" id="studentname" aria-describedby="nameHelp" placeholder="Student ID, Stdent Name, University">
+      </div>
+      <div class="col-md-3">
+        <button class="btn btn-primary">Search</button>
+      </div>
+    </div>
+
+    <br/><br/><br/>
+
+    <table class="table table-hover vacancies-table">
+      <thead>
+        <tr>
+          <th>Univercity</th>
+          <th>Job Title</th>
+          <th>Department</th>
+          <th>Student Name</th>
+          <th>Student ID</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Totalamber</td>
+          <td>Associate Software Engineer</td>
+          <td>JS/ C#</td>
+          <td>1 year</td>
+          <td>Paid</td>
+          <td>
+            <button button class="btn btn-primary" data-toggle="modal" data-target="#viewModal">View</button>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#informModal">Inform Faculty</button>
+            <button class="btn btn-danger">Remove</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="modal fade" id="viewModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Student Profile</h4>
+          </div>
+
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                    <img  src="../../../assets/images/profile-dylan.jpg" />
+              </div>
+              <div class="col-md-5"></div>
+              <div class="col-md-5">
+                  <div class=" profile-name">
+                    <p>Dylan O'Brien</p>
+                  </div>
+                  <div class=" profile-institute">
+                    <p>Sri Lanka Institute of Information Technology</p>
+                    <p>Software Engineering - 3rd Year
+                  </div>
+                  <hr>
+                  <div class=" profile-details">
+                    <table>
+                      <tr>
+                        <td><label> Age</label></td>
+                        <td>26 years</td>
+                      </tr>
+                      <tr>
+                        <td><label> Address</label></td>
+                        <td>No 250, Horton Place, Colombo 07</td>
+                      </tr>
+                      <tr>
+                        <td><label>Email</label></td>
+                        <td>dylan91@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td><label>Phone</label></td>
+                        <td>+(94)71 2883991</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="informModal" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Edit Profile</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2">
+                <label for="StudentName">Department</label>
+              </div>
+              <div class="col-md-6">
+                <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2">
+                <label for="StudentName">Vacancy heading</label>
+              </div>
+              <div class="col-md-6">
+                <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2">
+                <label for="StudentName">Description</label>
+              </div>
+              <div class="col-md-6">
+                <textarea class="form-control" id="univercityname" aria-describedby="nameHelp"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2">
+                <label for="StudentName">Duration</label>
+              </div>
+              <div class="col-md-6">
+                <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-2">
+                <label for="StudentName">pPain/Non-paid</label>
+              </div>
+              <div class="col-md-6">
+                <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary"> Save Changes </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-1">
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample">
+                + Add new vacancy
+        </button>
+      </div>
+    </div>
+
+    <br/>
+
+    <div class="row">
+      <form>
+        <div class="collapse" id="collapseExample" aria-expanded="false">
+          <br/>
+          <div class="col-md-2">
+            <input type="text-felid" class="form-control" placeholder="Department">
+          </div>
+
+          <div class="col-md-2">
+            <input type="text-felid" class="form-control" placeholder="Vacancy Title">
+          </div>
+
+          <div class="col-md-2">
+            <input type="text-felid" class="form-control" placeholder="Description">
+          </div>
+
+          <div class="col-md-2">
+            <input type="text-felid" class="form-control" placeholder="Duration">
+          </div>
+
+          <div class="col-md-2">
+            <input type="text-felid" class="form-control" placeholder="Paid/Non-paid">
+          </div>
+
+          <div class="col-md-1">
+            <div class="w3-col" style="text-align: right">
+              <button class="btn btn-default pull-right" ng-click="">Publish</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <br/>
+  </div>
+</div>

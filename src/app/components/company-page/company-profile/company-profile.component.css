@@ -1,17 +1,21 @@
-
-
+.report-form{
+    width:90%;
+    height:1000px;
+    margin-left: auto;
+    margin-right:auto;
+    box-shadow: 10px 10px 5px  #888888;
+    background:#f5f5f5;
+}
 
 #imageUpload
 {
-   
    opacity:0;
-  
-
 }
 
 #profileImage:hover{
      filter:brightness(50%);
 }
+
 #imageUpload:hover{
     filter:brightness(50%);
 }
@@ -28,11 +32,11 @@ table
 tr{
     height:50px;
 }
+
 .profile{
     margin-top:50px;
 
 }
-
 
 .profile-image{
     text-align:center;
@@ -56,11 +60,13 @@ tr{
     background:#f5f5f5;
     
 }
+
 .profile-intro{
     float:right;
     margin-top:20px;
 
 }
+
 .profile-name{
     margin-top:10px;
     text-align:left ;

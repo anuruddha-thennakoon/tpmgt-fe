@@ -17,25 +17,26 @@ import { StudentProfileComponent } from '../components/student-page/student-prof
 import { CompanyProfileComponent } from '../components/company-page/company-profile/company-profile.component';
 import { PublishVacanciesComponent } from '../components/company-page/publish-vacancies/publish-vacancies.component';
 import { ReportsComponent } from '../components/company-page/reports/reports.component';
-import{CreateResumeComponent} from '../components/student-page/create-resume/create-resume.component';
+import { CreateResumeComponent } from '../components/student-page/create-resume/create-resume.component';
 
-import {StudentHelpComponent} from '../components/student-help/student-help.component';
-import{AdminInquiryViewComponent} from '../components/admin-inquiry-view/admin-inquiry-view.component';
-import {AdminCommonNavigationComponent} from '../components/admin-common-navigation/admin-common-navigation.component';
-import {AdminCompanyViewComponent} from '../components/admin-company-view/admin-company-view.component';
-import {AdminCreateAccountComponent} from '../components/admin-create-account/admin-create-account.component';
+import { StudentHelpComponent } from '../components/student-help/student-help.component';
+import { AdminInquiryViewComponent } from '../components/admin-inquiry-view/admin-inquiry-view.component';
+import { AdminCommonNavigationComponent } from '../components/admin-common-navigation/admin-common-navigation.component';
+import { AdminCompanyViewComponent } from '../components/admin-company-view/admin-company-view.component';
+import { AdminCreateAccountComponent } from '../components/admin-create-account/admin-create-account.component';
 import { CompanyInternComponent } from '../components/company-page/company-intern/company-intern.component';
 
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
-    { path: 'studentpage',
-      component: StudentPageComponent,
-      children:[
-           { path: 'jobs', component: JobsComponent },
-           { path: 'studentprofile', component: StudentProfileComponent },
-           { path: 'createresume', component: CreateResumeComponent },
-      ]
+    {
+        path: 'studentpage',
+        component: StudentPageComponent,
+        children: [
+            { path: 'jobs', component: JobsComponent },
+            { path: 'studentprofile', component: StudentProfileComponent },
+            { path: 'createresume', component: CreateResumeComponent },
+        ]
 
 
 
@@ -43,14 +44,14 @@ export const AppRoutes: Routes = [
 
 
 
-     },
+    },
     { path: 'facultypage', component: FacultyPageComponent },
     { path: 'companypage', component: CompanyPageComponent },
-   
-    
-    
-    
-    
+
+
+
+
+
     { path: 'studenthelp', component: StudentHelpComponent },
     { path: 'admininquiryview', component: AdminInquiryViewComponent },
     { path: 'admincompanyview', component: AdminCompanyViewComponent },
@@ -70,21 +71,28 @@ export const AppRoutes: Routes = [
         ]
     },
     {
-        path: 'companyProfile',
-        component: CompanyProfileComponent
-    },
-    {
-        path: 'publishVacancies',
-        component: PublishVacanciesComponent
-    },
-    {
-        path: 'reports',
-        component : ReportsComponent
-    },
-    {
-        path: 'interns',
-        component: CompanyInternComponent
+        path: 'companypage',
+        component: CompanyPageComponent,
+        children: [
+            {
+                path: 'companyProfile',
+                component: CompanyProfileComponent
+            },
+            {
+                path: 'publishVacancies',
+                component: PublishVacanciesComponent
+            },
+            {
+                path: 'reports',
+                component: ReportsComponent
+            },
+            {
+                path: 'interns',
+                component: CompanyInternComponent
+            }
+        ]
     }
+
 
 
 ]
