@@ -33,6 +33,11 @@ tr{
 
 }
 
+.cv-image > input
+{
+    display: none;
+   
+}
 
 .profile-image{
     text-align:center;
@@ -48,7 +53,7 @@ tr{
 }
 
 .profile{
-    width:50%;
+    width:70%;
     height:500px;
     margin-left: auto;
     margin-right:auto;
@@ -81,7 +86,7 @@ tr{
 .btn-profile-pic{
     margin-top:5px;
         width:220px;
-    margin-left:58px;
+    margin-left:15px;
 }
 
 .btn-resume-view{
