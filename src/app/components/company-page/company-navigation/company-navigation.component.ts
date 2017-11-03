@@ -39,4 +39,8 @@ export class CompanyNavigationComponent implements OnInit {
     this.router.navigateByUrl('/companypage/interns');
   }
 
+   goToHome(){
+    this.router.navigateByUrl('/companypage/companyHome');
+  }
+
 }

@@ -26,6 +26,7 @@ import { ReportsFacComponent } from '../components/faculty-page/reports/reports.
 import { PublishmentsComponent } from '../components/faculty-page/publishments/publishments.component';
 import { AcademicComponent } from '../components/faculty-page/academic/academic.component';
 import { TraineeRecordsComponent } from '../components/faculty-page/trainee-records/trainee-records.component';
+import { CompanyHomeComponent } from '../components/company-page/company-home/company-home.component';
 
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
@@ -125,8 +126,12 @@ export const AppRoutes: Routes = [
                 component: CompanyInternComponent
             },
             {
+                path: 'companyHome',
+                component: CompanyHomeComponent
+            },
+            {
                 path: '',
-                redirectTo: 'companyProfile',
+                redirectTo: 'companyHome',
                 pathMatch: 'full'
             }
         ]
