@@ -35,9 +35,21 @@ export const AppRoutes: Routes = [
             { path: 'studentprofile', component: StudentProfileComponent },
             { path: 'createresume', component: CreateResumeComponent },
         ]
+
+
+
+
+
+
+
     },
     { path: 'facultypage', component: FacultyPageComponent },
     { path: 'companypage', component: CompanyPageComponent },
+
+
+
+
+
     { path: 'studenthelp', component: StudentHelpComponent },
     {
         path: 'adminpage',
@@ -47,36 +59,43 @@ export const AppRoutes: Routes = [
                 path: 'dashboard',
                 component: DashboardComponent
             },
-            { 
-                path: 'admininquiryview', 
-                component: AdminInquiryViewComponent 
+            {
+                path: 'admininquiryview',
+                component: AdminInquiryViewComponent
             },
-            { 
-                path: 'admincompanyview', 
-                component: AdminCompanyViewComponent 
+            {
+                path: 'admincompanyview',
+                component: AdminCompanyViewComponent
             },
-            { 
-                path: 'admincreateaccount', 
-                component: AdminCreateAccountComponent 
+            {
+                path: 'admincreateaccount',
+                component: AdminCreateAccountComponent
             },
         ]
     },
     {
-        path: 'companyProfile',
-        component: CompanyProfileComponent
-    },
-    {
-        path: 'publishVacancies',
-        component: PublishVacanciesComponent
-    },
-    {
-        path: 'reports',
-        component: ReportsComponent
-    },
-    {
-        path: 'interns',
-        component: CompanyInternComponent
+        path: 'companypage',
+        component: CompanyPageComponent,
+        children: [
+            {
+                path: 'companyProfile',
+                component: CompanyProfileComponent
+            },
+            {
+                path: 'publishVacancies',
+                component: PublishVacanciesComponent
+            },
+            {
+                path: 'reports',
+                component: ReportsComponent
+            },
+            {
+                path: 'interns',
+                component: CompanyInternComponent
+            }
+        ]
     }
+
 
 
 ]
