@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { studentModel } from '../../../models/student.model';
+import { StoreService } from '../../../services/store.service';
 
 @Component({
   selector: 'app-traineerecords-page',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TraineeRecordsComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
+  constructor(
+    private store: StoreService
+  ) { }
+
+  ngOnInit() {}
 
 }

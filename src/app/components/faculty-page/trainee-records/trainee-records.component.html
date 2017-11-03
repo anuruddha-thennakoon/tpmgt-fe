@@ -1,23 +1,19 @@
 <div class="container">
-    <div class="jumbotron" style="margin-top: 150px">
+    <div class="jumbotron" style="margin-top: 200px">
         <div class="tab-content">
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th>Job ID</th>
+                        <th>Student Name</th>
                         <th>Company</th>
-                        <th>Job Title</th>
-                        <th>Duration</th>
-                        <th> Company </th>
+                        <th>Trainee Records</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr >
-                        <td>0001</td>
-                        <td>Virtusa</td>
-                        <td>UI/UX Internship</td>
-                        <td>6 months</td>
-                        <td>WSO2</td>
+                    <tr *ngFor="let student of store.studentList">
+                        <td>{{student.studentName}}</td>
+                        <td>{{student.companyName}}</td>
+                        <td>{{student.traineeRecords}}</td>
                     </tr>
 
                 </tbody>

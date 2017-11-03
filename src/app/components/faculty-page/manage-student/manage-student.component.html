@@ -49,7 +49,7 @@
             <label for="StudentName">Full Name</label>
           </div>
           <div class="col-md-6">
-            <input type="text-felid" class="form-control" id="studentname" aria-describedby="nameHelp">
+            <input type="text-felid" class="form-control" id="studentname" aria-describedby="nameHelp" name="StudentName" [(ngModel)]="newStudent.studentName">
           </div>
         </div>
         <br/>
@@ -59,7 +59,7 @@
             <label for="StudentName">NIC</label>
           </div>
           <div class="col-md-6">
-            <input type="text-felid" class="form-control" id="address" aria-describedby="nameHelp">
+            <input type="text-felid" class="form-control" id="address" aria-describedby="nameHelp"   name="NIC" [(ngModel)]="newStudent.nic">
           </div>
         </div>
         <br/>
@@ -69,7 +69,7 @@
               <label for="StudentName">Faculty</label>
             </div>
             <div class="col-md-6">
-              <select class="form-control">
+              <select class="form-control" name="Faculty" [(ngModel)]="newStudent.faculty">
                 <option value="Faculty of Computing">Faculty of Computing</option>
                 <option value="Faculty of Engineering">Faculty of Engineering</option>
                 <option value="Faculty of Business Management">Faculty of Business Management</option>
@@ -83,7 +83,7 @@
             <label for="StudentName">Field of Specialization</label>
           </div>
           <div class="col-md-6">
-            <select class="form-control">
+            <select class="form-control" name="filed" [(ngModel)]="newStudent.feildOfStudy">
               <option value="BSc in Information Technology">BSc in Information Technology</option>
               <option value="BSc in Software Engineering">BSc in Software Engineering</option>
               <option value="BSc in Cyber Security">BSc in Cyber Security</option>
@@ -97,7 +97,7 @@
             <label for="StudentName">Year</label>
           </div>
           <div class="col-md-6">
-            <select class="form-control">
+            <select class="form-control" name="year" [(ngModel)]="newStudent.year" >
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -109,7 +109,7 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary"> Create Account</button>
+        <button type="button" class="btn btn-primary "(click)="createStudent()"> Create Account</button>
       </div>
     </div>
   </div>

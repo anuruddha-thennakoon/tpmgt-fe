@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { StoreService } from '../../../services/store.service';
 import { Router } from '@angular/router';
+import { studentModel } from '../../../models/student.model';
+import { StudentService } from '../../../services/callers/student.service';
 
 @Component({
   selector: 'app-faculty-navigation',
@@ -11,14 +13,24 @@ export class FacultyNavigationComponent implements OnInit {
 
   constructor(
     private store: StoreService,
-    private router: Router
+    private router: Router,
+    private student: StudentService
   ) { }
   ngOnInit() {
   }
 
 
   goToTaineeRecords() {
-    this.router.navigateByUrl('/facultypage/traineerecords');
+   
+
+    this.student.getALLStudents()
+    .then(result => {
+      this.store.studentList = new Array<studentModel>();
+      this.store.studentList = JSON.parse(JSON.stringify(result));
+      this.router.navigateByUrl('/facultypage/traineerecords');
+    }).catch(error => {
+      console.log(error);
+    });
   }
 
   goToReportsfac() {
@@ -37,5 +49,6 @@ export class FacultyNavigationComponent implements OnInit {
   }
 
 
+  
 
 }

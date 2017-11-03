@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { StudentService } from '../../../services/callers/student.service';
+import { studentModel } from '../../../models/student.model';
+import { StoreService } from '../../../services/store.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-managestudent-page',
@@ -7,9 +11,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManageStudentComponent implements OnInit {
 
-  constructor() { }
+  newStudent: studentModel = new studentModel();
+  
+  constructor(
+    
+    private store: StoreService,
+    private student: StudentService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
+  createStudent() {
+    this.student.createstudent(this.newStudent)
+      .then(result => {
+        this.newStudent.studentName = "";
+        this.newStudent.nic = "";
+        this.newStudent.faculty = "";
+        this.newStudent.feildOfStudy = "";
+        this.newStudent.year = "";
+        console.log(result);
+      }).catch(error => {
+        console.log(error);
+      });
+  }
+
+
+
 
 }
