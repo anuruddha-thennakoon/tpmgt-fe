@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StoreService } from '../../../services/store.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-faculty-navigation',
@@ -7,9 +9,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FacultyNavigationComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(
+    private store: StoreService,
+    private router: Router
+  ) { }
   ngOnInit() {
   }
+
+
+  goToTaineeRecords() {
+    this.router.navigateByUrl('/facultypage/traineerecords');
+  }
+
+  goToReportsfac() {
+    this.router.navigateByUrl('/facultypage/reportsfac');
+  }
+
+  goToPublishments() {
+    this.router.navigateByUrl('/facultypage/publishments');
+  }
+
+  goToManagestudent(){
+    this.router.navigateByUrl('/facultypage/managestudent');
+  }
+  goTofacultyhome(){
+    this.router.navigateByUrl('/facultypage/academic');
+  }
+
+
 
 }

@@ -80,6 +80,11 @@ export const AppRoutes: Routes = [
             {
                 path: 'publishments',
                 component: PublishmentsComponent
+            },
+            {
+                path: '',
+                redirectTo: 'academic',
+                pathMatch: 'full'
             }
         ]
     },

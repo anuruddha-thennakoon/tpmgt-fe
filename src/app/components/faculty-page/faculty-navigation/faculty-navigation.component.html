@@ -1,32 +1,42 @@
-<!--<p>
-  student-navigation works!
-</p>-->
-
 <div class="navigation">
+        <div class=" col-md-12 ">
+                <ul class="navigation-ul">
+                        <li class="navigation-ul-one">
+                                <a (click)="goTofacultyhome()">
+                                        <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+                                        <p class="icon-text"> Home</p>
+                                </a>
+                        </li>
+                        <li class="navigation-ul-one">
+                                <a (click)="goToManagestudent()">
+                                        <i class="fa fa-graduation-cap fa-3x" aria-hidden="true"></i>
+                                        <p class="icon-text"> Manage Student </p>
+                                </a>
+                        </li>
 
-    <div class=" col-md-12 ">
-        <ul class="navigation-ul">
-            <li class="navigation-ul-one"><a href='/managestudent'>
-                    <i class="fa fa-home fa-3x" aria-hidden="true"></i>
-                   <p class="icon-text"> Home</p>
-                    </a> </li>
+                        <li class="navigation-ul-three">
+                                <a (click)="goToTaineeRecords()">
+                                        <i class="fa fa-user fa-3x" aria-hidden="true"></i>
 
-            <li class="navigation-ul-three"><a href='/managestudent'>
-                    <i class="fa fa-user fa-3x" aria-hidden="true"></i>
+                                        <p class="icon-text"> Trainee Records </p>
+                                </a>
+                        </li>
 
-                   <p class="icon-text"> Manage Student </p>
-                    </a></li>
+                        <li class="navigation-ul-two">
+                                <a (click)="goToPublishments()">
+                                        <i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>
+                                        <p class="icon-text">Publishments</p>
+                                </a>
+                        </li>
 
-            <li class="navigation-ul-four"> <a href='/reportsfac'>
-                    <i class="fa fa-file-text fa-3x" aria-hidden="true"></i>
-                   <p class="icon-text"> Reports </p>
-                    </a> </li>
+                        <li class="navigation-ul-four">
+                                <a (click)="goToReportsfac()">
+                                        <i class="fa fa-file-text fa-3x" aria-hidden="true"></i>
+                                        <p class="icon-text"> Reports </p>
+                                </a>
+                        </li>
 
-            <li class="navigation-ul-two"><a href='/publishments'>
-                    <i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>
-                  <p class="icon-text">Publishments</p>
-                    </a> </li>  
 
-        </ul>
-    </div>
+                </ul>
+        </div>
 </div>

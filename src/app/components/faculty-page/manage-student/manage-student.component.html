@@ -1,36 +1,37 @@
+<div class=" col-md-12 ">
+  <div class="navigation">
+
+    <ul class="navigation-ul">
+
+      <li class="list">
 
 
-<div class="searchbar">
-    <input type="text" class="search" id="studentId"  placeholder="Enter Student Name/ID.." >
-    <button class="button">Search </button> 
- </div>
+        <p class="selection-text" data-toggle="modal" data-target="#managestudent">
+          <i class="fa fa-user fa-3x" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;
+          <a> Create New Student Account </a>
+        </p>
+      </li>
+      <br>
+      <br>
 
-   
-    <div class=" col-md-12 ">
-            <div class="navigation">
-                    
-        <ul class="navigation-ul">
+      <li class="list">
+        <p class="selection-text" data-toggle="modal" data-target="#addrecord">
+          <i class="fa fa-file-text fa-3x" aria-hidden="true"></i> &nbsp; &nbsp;
+          <a> Add Records to Student Profile </a>
+        </p>
+      </li>
+      <br>  <br>
+      <li class="list">
+        <p class="selection-text" data-toggle="modal" data-target="#deleteprofile">
+          <i class="fa fa-trash-o fa-3x" aria-hidden="true"></i> &nbsp; &nbsp;
+          <a> Delete Student Account </a>
+        </p>
+      </li>
+      <br>
 
-            <li class="list">
-                   
-
-                   <p class="selection-text" data-toggle="modal" data-target="#managestudent"> <i class="fa fa-user fa-3x" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp; <a> Create New Student Profile </a> </p>
-                    </li><br>
-
-            <li class="list"> 
-                   <p class="selection-text" data-toggle="modal" data-target="#addrecord" >  <i class="fa fa-file-text fa-3x" aria-hidden="true"></i> &nbsp; &nbsp;<a> Add Records to Student Profile </a> </p>
-                     </li><br>
-
-                     <a href='/traineerecords' > 
-            <li class="list">
-                  <p class="selection-text" > <i class="fa fa-briefcase fa-3x" aria-hidden="true"></i>&nbsp; &nbsp; Student Trainee Records </p>
-                    </li></a>
-
-        </ul>
-    </div>
-  
-</div>    
-
+    </ul>
+  </div>
+</div>
 
 
 
@@ -40,47 +41,75 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Edit Profile</h4>
+        <h4 class="modal-title">Create Student Account</h4>
       </div>
       <div class="modal-body">
-          <div class="row">
+        <div class="row">
+          <div class="col-md-2">
+            <label for="StudentName">Full Name</label>
+          </div>
+          <div class="col-md-6">
+            <input type="text-felid" class="form-control" id="studentname" aria-describedby="nameHelp">
+          </div>
+        </div>
+        <br/>
+
+        <div class="row">
+          <div class="col-md-2">
+            <label for="StudentName">NIC</label>
+          </div>
+          <div class="col-md-6">
+            <input type="text-felid" class="form-control" id="address" aria-describedby="nameHelp">
+          </div>
+        </div>
+        <br/>
+
+        <div class="row">
             <div class="col-md-2">
-              <label for="StudentName">Full Name</label>
+              <label for="StudentName">Faculty</label>
             </div>
-            <div class="col-md-6"> 
-              <input type="text-felid" class="form-control" id="studentname" aria-describedby="nameHelp" >
+            <div class="col-md-6">
+              <select class="form-control">
+                <option value="Faculty of Computing">Faculty of Computing</option>
+                <option value="Faculty of Engineering">Faculty of Engineering</option>
+                <option value="Faculty of Business Management">Faculty of Business Management</option>
+              </select>
             </div>
           </div>
           <br/>
 
-          <div class="row">
-            <div class="col-md-2">
-              <label for="StudentName">NIC</label>
-            </div>
-            <div class="col-md-6"> 
-              <input type="text-felid" class="form-control" id="address" aria-describedby="nameHelp">
-            </div>
+        <div class="row">
+          <div class="col-md-2">
+            <label for="StudentName">Field of Specialization</label>
           </div>
-          <br/>
-
-          <div class="row">
-            <div class="col-md-2">
-              <label for="StudentName">Field of Specialization</label>
-            </div>
-            <div class="col-md-6"> 
-                <select class="form-control">
-                    <option value="BSc in Information Technology">BSc in Information Technology</option>
-                    <option value="BSc in Software Engineering">BSc in Software Engineering</option>
-                    <option value="BSc in Cyber Security">BSc in Cyber Security</option>                    
-               </select> 
-               </div>
+          <div class="col-md-6">
+            <select class="form-control">
+              <option value="BSc in Information Technology">BSc in Information Technology</option>
+              <option value="BSc in Software Engineering">BSc in Software Engineering</option>
+              <option value="BSc in Cyber Security">BSc in Cyber Security</option>
+            </select>
           </div>
-          <br/>          
+        </div>
+        <br/>
 
-        
+        <div class="row">
+          <div class="col-md-2">
+            <label for="StudentName">Year</label>
+          </div>
+          <div class="col-md-6">
+            <select class="form-control">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+        <br/>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" > Create Account</button> 
+        <button type="button" class="btn btn-primary"> Create Account</button>
       </div>
     </div>
   </div>
@@ -89,33 +118,66 @@
 
 
 <div class="modal fade" id="addrecord" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add Student Records</h4>
+      </div>
+      <div class="modal-body">
+        <div class="div2">
+
+          <div class="form-group">
+            <label>Enter the student ID </label>
+            <input type="text" class="form-control" id="studentId" placeholder="Enter Student ID">
+          </div>
+
+          <div class="form-group">
+            <label>Description </label>
+            <textarea class="form-control" id="decription" placeholder="Description"> </textarea>
+          </div>
+
+        </div>
+        <br/>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary"> Add Academic Record</button>
+        <button type="button" class="btn btn-primary">Add Extracurricular Record</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="modal fade" id="deleteprofile" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Edit Profile</h4>
+          <h4 class="modal-title">Delete Account</h4>
         </div>
         <div class="modal-body">
-            <div class="div2">
-                
-                                <div class="form-group">
-                                         <label >Enter the student ID </label> 
-                                        <input type="text" class="form-control" id="studentId"  placeholder="Enter Student ID" >
-                                 </div>
-                
-                                 <div class="form-group">
-                                        <label >Description </label> 
-                                       <textarea class="form-control" id="decription"  placeholder="Description" > </textarea>
-                                </div>
-                                
-                         </div>
-            <br/>          
+          <div class="div2">
   
+            <div class="form-group">
+              <label>Enter the student ID </label>
+              <input type="text" class="form-control" id="studentId" placeholder="Enter Student ID">
+            </div>
           
+          </div>
+          <br/>  
+  
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" > Add Academic Record</button> 
-          <button type="button" class="btn btn-primary" >Add Extracurricular Record</button> 
+          <button type="button" class="btn btn-primary"> Delete Account</button>
         </div>
       </div>
     </div>

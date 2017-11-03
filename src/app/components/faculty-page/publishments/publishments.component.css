@@ -5,11 +5,11 @@
 }   
 
 .reports{
-    width:70%;
+    width:100%;
     font-size: 14px;
     margin-left: auto;
     margin-right: auto;
-    margin-top:20px;
+    /* margin-top:auto; */
 }
 .job-text{
     text-align: center;
@@ -72,11 +72,6 @@ table>tbody>tr>td{
     margin-top:60px;
     margin-bottom: 30px;
 }
-.vacancies{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:20px;
-}
 
 a:hover {
     text-decoration: none;
@@ -94,8 +89,8 @@ a:hover {
 }
 
 .searchbar{
-    margin-left: 600px;
-    margin-right: 30px;
+    margin-left: 700px;
+    margin-right: 10px;
     /* margin-top:10px; */
     margin-bottom:10px;
     
