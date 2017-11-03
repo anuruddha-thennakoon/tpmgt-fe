@@ -1,21 +1,16 @@
-
 .navigation{
-   
     width:100%;
       margin-left: auto;
     margin-right:auto;
     /*margin-right:auto;*/
    text-align: center;
-  
 }
 .navigation-ul{
-  
-    width:60%;
+    width:100%;
     margin-left: auto;
     margin-right:auto;
     margin-top:25px;
 }
-
 
 .navigation ul li{
    width:160px;
