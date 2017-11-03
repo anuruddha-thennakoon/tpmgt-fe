@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CompanyService } from '../../../services/callers/company.service';
 import { jobVacancyModel } from '../../../models/jobVacancy.model';
 import { StoreService } from '../../../services/store.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-publish-vacancies',
@@ -14,10 +15,21 @@ export class PublishVacanciesComponent implements OnInit {
 
   constructor(
     private store: StoreService,
-    private company: CompanyService
+    private company: CompanyService,
+    private router: Router
   ) { }
 
   ngOnInit() {
+  }
+
+  goPublishVacancy(){
+    this.company.getALLVacancies()
+      .then(result => {
+        this.store.jobVacancyList = new Array<jobVacancyModel>();
+        this.store.jobVacancyList = JSON.parse(JSON.stringify(result));
+      }).catch(error => {
+        console.log(error);
+      });
   }
 
   setVacancy(jobVacancy) {
@@ -32,6 +44,7 @@ export class PublishVacanciesComponent implements OnInit {
         this.newVacancy.description = "";
         this.newVacancy.duration = "";
         this.newVacancy.paidNonPaid = "";
+        this.goPublishVacancy();
         console.log(result);
       }).catch(error => {
         console.log(error);
