@@ -4,7 +4,7 @@
     font-size:34px;
     text-align: center;
     color:#498DE7;
-    margin-bottom:30px;
+    padding-bottom:30px;
 }
 
 .create-resume-inner{
@@ -88,3 +88,4 @@ textarea{
 .create-resume-form{
     margin-top:25px;
 }
+
