@@ -1,176 +1,139 @@
 <div class="container">
-  <div class="jumbotron">
+    <div class="jumbotron">
+        <div class="vacancies">
+            <table class="table table-hover vacancies-table">
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Job Title</th>
+                        <th>Description</th>
+                        <th>Duration</th>
+                        <th>Paid/Non-Paid</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let jobVacancy of store.jobVacancyList">
+                        <td>{{jobVacancy.companyName}}</td>
+                        <td>{{jobVacancy.jobTitle}}</td>
+                        <td>{{jobVacancy.description}}</td>
+                        <td>{{jobVacancy.duration}}</td>
+                        <td>{{jobVacancy.paidNonPaid}}</td>
+                        <td>
+                            <button button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Edit</button>
+                            <button class="btn btn-danger">Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-    <div class="vacancies">
-        <table class="table table-hover vacancies-table">
-            <thead>
-                <tr>
-                    <th>Department</th>
-                    <th>Job Title</th>
-                    <th>Description</th>
-                    <th>Duration</th>
-                    <th>Paid/Non-Paid</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Totalamber</td>
-                    <td>Associate Software Engineer</td>
-                    <td>JS/ C#</td>
-                    <td>1 year</td>
-                    <td>Paid</td>
-                    <td>
-                        <button button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Edit</button>
-                        <button class="btn btn-danger">Remove</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Totalamber</td>
-                    <td>Associate Software Engineer</td>
-                    <td>JS/ C#</td>
-                    <td>1 year</td>
-                    <td>Paid</td>
-                    <td>
-                        <button button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Edit</button>
-                        <button class="btn btn-danger">Remove</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Pearson</td>
-                    <td>UI/UX Internship</td>
-                    <td>JS/ C#</td>
-                    <td>6 months</td>
-                    <td>Paid</td>
-                    <td>
-                        <button button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Edit</button>
-                        <button class="btn btn-danger">Remove</button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Totalamber</td>
-                    <td>Associate Software Engineer</td>
-                    <td>JS/ C#</td>
-                    <td>1 year</td>
-                    <td>Paid</td>
-                    <td>
-                        <button button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Edit</button>
-                        <button class="btn btn-danger">Remove</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!--model for editing vacancy-->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Edit Profile</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <label for="StudentName">Department</label>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+            <!--model for editing vacancy-->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Edit Profile</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="StudentName">Department</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <label for="StudentName">Vacancy heading</label>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <label for="StudentName">Description</label>
-                            </div>
-                            <div class="col-md-6">
-                                <textarea  class="form-control" id="univercityname" aria-describedby="nameHelp"></textarea>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="StudentName">Vacancy heading</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <label for="StudentName">Duration</label>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <label for="StudentName">pPain/Non-paid</label>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="StudentName">Description</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea class="form-control" id="univercityname" aria-describedby="nameHelp"></textarea>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary"> Save Changes </button>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="StudentName">Duration</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="StudentName">pPain/Non-paid</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"> Save Changes </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--end model for editing vacancy-->
+            <!--end model for editing vacancy-->
 
-        <div class="row">
-            <div class="col-md-2">
-                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample">
+            <div class="row">
+                <div class="col-md-2">
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample">
                 + Add new vacancy
             </button>
+                </div>
             </div>
-        </div>
-        <br/>
-        <div class="row">
-            <form>
-                <div class="collapse" id="collapseExample" aria-expanded="false">
-                    <br/>
-                    <div class="col-md-2">
-                        <input type="text-felid" class="form-control" placeholder="Department">
-                    </div>
+            <br/>
+            <div class="row">
+                <form>
+                    <div class="collapse" id="collapseExample" aria-expanded="false">
+                        <br/>
+                        <div class="col-md-2">
+                            <input type="text-felid" class="form-control" placeholder="Department" name="Department" [(ngModel)]="newVacancy.companyName">
+                        </div>
 
-                    <div class="col-md-2">
-                        <input type="text-felid" class="form-control" placeholder="Vacancy Title">
-                    </div>
+                        <div class="col-md-2">
+                            <input type="text-felid" class="form-control" placeholder="Vacancy Title" name="VacancyTitle" [(ngModel)]="newVacancy.jobTitle">
+                        </div>
 
-                    <div class="col-md-2">
-                        <input type="text-felid" class="form-control" placeholder="Description">
-                    </div>
+                        <div class="col-md-2">
+                            <input type="text-felid" class="form-control" placeholder="Description" name="Description" [(ngModel)]="newVacancy.description">
+                        </div>
 
-                    <div class="col-md-2">
-                        <input type="text-felid" class="form-control" placeholder="Duration">
-                    </div>
+                        <div class="col-md-2">
+                            <input type="text-felid" class="form-control" placeholder="Duration" name="Duration" [(ngModel)]="newVacancy.duration">
+                        </div>
 
-                    <div class="col-md-2">
-                        <input type="text-felid" class="form-control" placeholder="Paid/Non-paid">
-                    </div>
+                        <div class="col-md-2">
+                            <input type="text-felid" class="form-control" placeholder="Paid/Non-paid" name="Nonpaid" [(ngModel)]="newVacancy.paidNonPaid">
+                        </div>
 
-                    <div class="col-md-1">
-                        <div class="w3-col" style="text-align: right">
-                            <button class="btn btn-primary pull-right" ng-click="">Publish</button>
+                        <div class="col-md-1">
+                            <div class="w3-col" style="text-align: right">
+                                <button class="btn btn-primary pull-right" (click)="createJobVacancy()">Publish</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
+            <br/>
         </div>
-        <br/>
     </div>
-</div>
 </div>

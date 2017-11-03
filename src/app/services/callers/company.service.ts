@@ -19,6 +19,24 @@ export class CompanyService {
     });
   }
 
+  getALLVacancies() {
+    return new Promise((resolve, reject) => {
+      this.axios
+        .get('http://127.0.0.1:8000/api/jobVacancy')
+        .then(result => resolve(result.data))
+        .catch(err => reject(err));
+    });
+  }
+
+  createVacancies(data) {
+    return new Promise((resolve, reject) => {
+      this.axios
+        .post('http://127.0.0.1:8000/api/jobVacancy', data)
+        .then(result => resolve(result.data))
+        .catch(err => reject(err));
+    });
+  }
+
   createCompany(data) {
     return new Promise((resolve, reject) => {
       this.axios
