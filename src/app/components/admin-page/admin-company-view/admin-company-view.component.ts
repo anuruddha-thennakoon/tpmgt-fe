@@ -14,5 +14,8 @@ export class AdminCompanyViewComponent implements OnInit {
 
   ngOnInit() {}
 
+  setCompany(company) {
+    this.store.company = company;
+  }
 
 }
