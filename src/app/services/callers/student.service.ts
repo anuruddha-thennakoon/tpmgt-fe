@@ -28,6 +28,14 @@ export class StudentService {
     });
   }
 
+  deletetudent(data) {
+    return new Promise((resolve, reject) => {
+      this.axios
+        .post('http://127.0.0.1:8000/api/student', data)
+        .then(result => resolve(result.data))
+        .catch(err => reject(err));
+    });
+  }
 
 
 }

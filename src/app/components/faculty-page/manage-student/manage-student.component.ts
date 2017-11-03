@@ -37,6 +37,16 @@ export class ManageStudentComponent implements OnInit {
   }
 
 
+ deleteStudent(req, res) {
+    this.student.deletetudent(this.newStudent)
+    .then(() => {
+        res.sendStatus(200);
+    }).catch(err => {
+        console.error(err);
+        res.sendStatus(500);
+    });
+}
+
 
 
 }
