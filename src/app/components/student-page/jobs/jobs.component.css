@@ -11,6 +11,7 @@
     width:80%;
     margin-left:auto;
     margin-right:auto;
+    padding-bottom: 30px;
 
 }
 
@@ -19,4 +20,10 @@ table>thead>tr>th{
 }
 table>tbody>tr>td{
     text-align: center;
+}
+
+.vacancies{
+    background: #ffffff !important;
+    height:auto;
+    padding-bottom:60px;
 }
