@@ -8,6 +8,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 //Services
 import { StoreService } from './services/store.service';
 import { CompanyService } from './services/callers/company.service';
+import { AdminService } from './services/callers/admin.service';
+import { FacultyService } from './services/callers/faculty.service';
+import { StudentService } from './services/callers/student.service';
 
 import { AppRoutes } from './routes/routes';
 import { AppComponent } from './app.component';
@@ -87,7 +90,10 @@ import { CompanyInternComponent } from './components/company-page/company-intern
   ],
   providers: [
     StoreService,
-    CompanyService
+    CompanyService,
+    AdminService,
+    FacultyService,
+    StudentService
   ],
   bootstrap: [AppComponent]
 })
