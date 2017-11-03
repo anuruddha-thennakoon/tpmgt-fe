@@ -34,7 +34,6 @@ export const AppRoutes: Routes = [
     { path: 'signup', component: SignupComponent },
     { path: 'studentpage', component: StudentPageComponent },
     { path: 'facultypage', component: FacultyPageComponent },
-    { path: 'companypage', component: CompanyPageComponent },
     { path: 'jobs', component: JobsComponent },
     { path: 'studentprofile', component: StudentProfileComponent },
     { path: 'createresume', component: CreateResumeComponent },
@@ -59,22 +58,28 @@ export const AppRoutes: Routes = [
             }
         ]
     },
-    {
-        path: 'companyProfile',
-        component: CompanyProfileComponent
-    },
-    {
-        path: 'publishVacancies',
-        component: PublishVacanciesComponent
-    },
-    {
-        path: 'reports',
-        component : ReportsComponent
-    },
-    {
-        path: 'interns',
-        component: CompanyInternComponent
+    {   path: 'companypage', 
+        component: CompanyPageComponent,
+        children: [
+            {
+                path: 'companyProfile',
+                component: CompanyProfileComponent
+            },
+            {
+                path: 'publishVacancies',
+                component: PublishVacanciesComponent
+            },
+            {
+                path: 'reports',
+                component : ReportsComponent
+            },
+            {
+                path: 'interns',
+                component: CompanyInternComponent
+            }
+        ]
     }
+    
 
 
 ]
