@@ -123,6 +123,11 @@ export const AppRoutes: Routes = [
             {
                 path: 'interns',
                 component: CompanyInternComponent
+            },
+            {
+                path: '',
+                redirectTo: 'companyProfile',
+                pathMatch: 'full'
             }
         ]
     }
