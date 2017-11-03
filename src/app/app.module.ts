@@ -45,7 +45,7 @@ import { AdminCreateAccountComponent } from './components/admin-page/admin-creat
 import { CompanyInternComponent } from './components/company-page/company-intern/company-intern.component';
 import { CompanyHomeComponent } from './components/company-page/company-home/company-home.component';
 import { SignupRequestComponent } from './components/signup-request/signup-request.component';
-
+import { CreateResumeButtonComponent } from './components/student-page/create-resume/create-resume-button/create-resume-button.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -79,7 +79,8 @@ import { SignupRequestComponent } from './components/signup-request/signup-reque
     ManageStudentComponent,
     ReportsFacComponent,
     CompanyHomeComponent,
-    SignupRequestComponent
+    SignupRequestComponent,
+    CreateResumeButtonComponent
   ],
   imports: [
     FormsModule,

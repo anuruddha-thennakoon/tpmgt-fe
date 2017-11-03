@@ -27,7 +27,7 @@ import { PublishmentsComponent } from '../components/faculty-page/publishments/p
 import { AcademicComponent } from '../components/faculty-page/academic/academic.component';
 import { TraineeRecordsComponent } from '../components/faculty-page/trainee-records/trainee-records.component';
 import { CompanyHomeComponent } from '../components/company-page/company-home/company-home.component';
-
+import { CreateResumeButtonComponent } from '../components/student-page/create-resume/create-resume-button/create-resume-button.component';
 export const AppRoutes: Routes = [
     { path: '', component: LoginComponent },
     { path: 'signup', component: SignupComponent },
