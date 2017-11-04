@@ -20,8 +20,7 @@ export class FacultyNavigationComponent implements OnInit {
   }
 
 
-  goToTaineeRecords() {
-   
+  goToTaineeRecords() {  
 
     this.student.getALLStudents()
     .then(result => {

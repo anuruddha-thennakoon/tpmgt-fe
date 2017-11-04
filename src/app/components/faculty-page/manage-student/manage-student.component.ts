@@ -12,9 +12,9 @@ import { Router } from '@angular/router';
 export class ManageStudentComponent implements OnInit {
 
   newStudent: studentModel = new studentModel();
-  
+
   constructor(
-    
+
     private store: StoreService,
     private student: StudentService,
     private router: Router
@@ -36,16 +36,18 @@ export class ManageStudentComponent implements OnInit {
       });
   }
 
-
- deleteStudent(req, res) {
+  deleteStudent(req, res) {
     this.student.deletetudent(this.newStudent)
-    .then(() => {
+    .then((
+      
+    ) => {
         res.sendStatus(200);
     }).catch(err => {
         console.error(err);
         res.sendStatus(500);
     });
 }
+
 
 
 

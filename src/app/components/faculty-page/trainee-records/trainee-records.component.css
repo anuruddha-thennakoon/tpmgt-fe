@@ -1,3 +1,18 @@
 .tab-content{
     width:100%;
 }
+.table{
+    margin-left: 100px;
+    width:90%;
+}
+
+.table>thead>tr{
+    text-align:center;
+}
+
+.searchdiv{
+    margin-left: 400px;    
+    margin-bottom: 70px;
+    width:100%;
+
+}

@@ -28,4 +28,16 @@ export class CompanyService {
     });
   }
 
+
+
+
+  getALLVacancies() {
+    return new Promise((resolve, reject) => {
+      this.axios
+        .get('http://127.0.0.1:8000/api/company')
+        .then(result => resolve(result.data))
+        .catch(err => reject(err));
+    });
+  }
+
 }

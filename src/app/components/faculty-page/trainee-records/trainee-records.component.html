@@ -1,23 +1,35 @@
 <div class="container">
     <div class="jumbotron" style="margin-top: 200px">
-        <div class="tab-content">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Student Name</th>
-                        <th>Company</th>
-                        <th>Trainee Records</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let student of store.studentList">
-                        <td>{{student.studentName}}</td>
-                        <td>{{student.companyName}}</td>
-                        <td>{{student.traineeRecords}}</td>
-                    </tr>
 
-                </tbody>
-            </table>
+
+      <div class="searchdiv">
+        <div class="col-md-6">
+            <input type="text-felid" class="form-control" id="studentname" aria-describedby="nameHelp" placeholder="Enter Student Name or ID..">
         </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary">Search</button>
+        </div>
+    
     </div>
+
+    <div class="tab-content">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Company</th>
+                    <th>&nbsp; &nbsp; Trainee Records</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of store.studentList">
+                    <td>{{student.studentName}}</td>
+                    <td>{{student.companyName}}</td>
+                    <td>{{student.traineeRecords}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
 </div>

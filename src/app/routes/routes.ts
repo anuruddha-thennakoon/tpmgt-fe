@@ -83,7 +83,7 @@ export const AppRoutes: Routes = [
             },
             {
                 path: '',
-                redirectTo: 'academic',
+                redirectTo: 'managestudent',
                 pathMatch: 'full'
             }
         ]
