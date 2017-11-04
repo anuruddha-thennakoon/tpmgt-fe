@@ -1,8 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CompanyService } from '../../../services/callers/company.service';
-import { jobVacancyModel } from '../../../models/jobVacancy.model';
-import { StoreService } from '../../../services/store.service';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-publish-vacancies',
@@ -11,44 +7,9 @@ import { Router } from '@angular/router';
 })
 export class PublishVacanciesComponent implements OnInit {
 
-  newVacancy: jobVacancyModel = new jobVacancyModel();
-
-  constructor(
-    private store: StoreService,
-    private company: CompanyService,
-    private router: Router
-  ) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  goPublishVacancy(){
-    this.company.getALLVacancies()
-      .then(result => {
-        this.store.jobVacancyList = new Array<jobVacancyModel>();
-        this.store.jobVacancyList = JSON.parse(JSON.stringify(result));
-      }).catch(error => {
-        console.log(error);
-      });
-  }
-
-  setVacancy(jobVacancy) {
-    this.store.company = jobVacancy;
-  }
-
-  createJobVacancy() {
-    this.company.createVacancies(this.newVacancy)
-      .then(result => {
-        this.newVacancy.companyName = "";
-        this.newVacancy.jobTitle = "";
-        this.newVacancy.description = "";
-        this.newVacancy.duration = "";
-        this.newVacancy.paidNonPaid = "";
-        this.goPublishVacancy();
-        console.log(result);
-      }).catch(error => {
-        console.log(error);
-      });
   }
 
 }

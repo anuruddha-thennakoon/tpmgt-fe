@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CompanyService } from '../../../services/callers/company.service';
-import { StoreService } from '../../../services/store.service';
 import { CompanyModel } from '../../../models/company.model';
 
 @Component({
@@ -15,8 +14,7 @@ export class AdminNavigationComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private company: CompanyService,
-    private store: StoreService
+    private company: CompanyService
   ) { }
 
   ngOnInit() { }
@@ -26,36 +24,29 @@ export class AdminNavigationComponent implements OnInit {
   }
 
   goInquiries() {
-    this.router.navigateByUrl('/adminpage/viewinquiry');
+    this.router.navigateByUrl('/adminpage/admininquiryview');
   }
 
   goStudentRecords() {
-    this.router.navigateByUrl('/adminpage/records');
+    this.router.navigateByUrl('/adminpage/inquries');
   }
 
   goViewCompanies() {
+    this.router.navigateByUrl('/adminpage/admincompanyview');
+  }
+
+  goCreateAccount() {
+    this.router.navigateByUrl('/adminpage/admincreateaccount');
+  }
+
+  viewAllCompanies() {
     this.company.getALLCompanies()
       .then(result => {
-        this.store.companyList = new Array<CompanyModel>();
-        this.store.companyList = JSON.parse(JSON.stringify(result));
-        this.router.navigateByUrl('/adminpage/viewcompany');
+        console.log(result);
       }).catch(error => {
         console.log(error);
       });
   }
-
-  goCreateAccount() {
-    this.router.navigateByUrl('/adminpage/createaccount');
-  }
-
-  // viewAllCompanies() {
-  //   this.company.getALLCompanies()
-  //     .then(result => {
-  //       console.log(result);
-  //     }).catch(error => {
-  //       console.log(error);
-  //     });
-  // }
 
   createCompany() {
     this.company.createCompany(this.newCommpany)
@@ -66,5 +57,5 @@ export class AdminNavigationComponent implements OnInit {
       });
   }
 
-
+  
 }

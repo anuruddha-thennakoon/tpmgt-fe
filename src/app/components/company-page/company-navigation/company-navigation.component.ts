@@ -3,7 +3,6 @@ import { StoreService } from '../../../services/store.service';
 import { Router } from '@angular/router';
 import { CompanyService } from '../../../services/callers/company.service';
 import { CompanyModel } from '../../../models/company.model';
-import { jobVacancyModel } from '../../../models/jobVacancy.model';
 
 @Component({
   selector: 'app-company-navigation',
@@ -14,7 +13,6 @@ export class CompanyNavigationComponent implements OnInit {
 
   constructor(
     private store: StoreService,
-    private company: CompanyService,
     private router: Router
   ) { }
 
@@ -30,14 +28,7 @@ export class CompanyNavigationComponent implements OnInit {
   }
 
   goToPublishVacancy(){
-    this.company.getALLVacancies()
-      .then(result => {
-        this.store.jobVacancyList = new Array<jobVacancyModel>();
-        this.store.jobVacancyList = JSON.parse(JSON.stringify(result));
-        this.router.navigateByUrl('/companypage/publishVacancies');
-      }).catch(error => {
-        console.log(error);
-      });
+    this.router.navigateByUrl('/companypage/publishVacancies');
   }
 
   goToReports(){
