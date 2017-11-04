@@ -5,5 +5,5 @@ export class CompanyModel {
     contactPerson: String;
     contactNumber: String;
     email: String;
-    websiter: String;
+    website: String;
 }

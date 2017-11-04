@@ -1,52 +1,54 @@
 <div class="container">
     <div class="jumbotron">
+        <h3 style="text-align: center;">View Inquiries</h3>
+        <br/>
+        <br/>
         <table class="table table-striped">
             <thead>
                 <tr class="info">
-                    <th>Heading 1</th>
-                    <th>Heading 2</th>
                     <th>Student Number</th>
+                    <th>Student Name</th>
+                    <th>Faculty</th>
                     <th>Inquiry</th>
                     <th>View</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Lorem Ipsum</td>
-                    <td>Lorem Ipsum</td>
-                    <td>00001</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td>IT45212152</td>
+                    <td>Ruwan Sampath</td>
+                    <td>Faculty of computing</td>
+                    <td>Change efforts are effective when the change to be made is clearly defined, assistance and opportunities
+                        to collaborate are available, and administrators and policies support the change.</td>
                     <td>
-                        <button class="btn btn-primary">view</button>
-
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Lorem Ipsum</td>
-                    <td>Lorem Ipsum</td>
-                    <td>00001</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                    <td>
-                        <button class="btn btn-primary">view</button>
-
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">view</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Lorem Ipsum</td>
-                    <td>Lorem Ipsum</td>
-                    <td>00001</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td>IT14523568</td>
+                    <td>Nihal Fernando</td>
+                    <td>Faculty of computing</td>
+                    <td>As individuals progress through a change process, their needs for support and assistance change</td>
                     <td>
-                        <button class="btn btn-primary">view</button>
-
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">view</button>
                     </td>
                 </tr>
                 <tr>
-                    <td>Lorem Ipsum</td>
-                    <td>Lorem Ipsum</td>
-                    <td>00001</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                    <td>BM25412563</td>
+                    <td>Supun Ransinghe</td>
+                    <td>Faculty of business</td>
+                    <td>A Study of High School Students’ Performance of a Chemistry Experiment within the Virtual World of Second
+                        Life
+                    </td>
+                    <td>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">view</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>BM47523596</td>
+                    <td>Roshan Mahanama</td>
+                    <td>Faculty of business</td>
+                    <td> Why is it important for students to learn how to access information and find their own resources</td>
                     <td>
                         <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">view</button>
                     </td>
@@ -57,78 +59,64 @@
 </div>
 
 <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Edit Profile</h4>
+                <h4 class="modal-title">View Inquiry</h4>
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-2">
-                        <label for="StudentName">University Name</label>
+                    <div class="col-md-4">
+                        <label for="StudentName">Student Number</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp" value="IT45212152" readonly>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="StudentName">Student Name</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp" value="Ruwan Sampath" readonly>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="StudentName">Faculty</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="e-mail" class="form-control" id="univercityname" aria-describedby="nameHelp" value="Faculty of computing" readonly>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="StudentName">Inquiry</label>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea class="form-control" rows="7" cols="50" readonly>Change efforts are effective when the change to be made is clearly defined, assistance and opportunities to collaborate are available, and administrators and policies support the change. 
+                        </textarea>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="StudentName">Response</label>
                     </div>
                     <div class="col-md-6">
                         <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
                     </div>
                 </div>
                 <br/>
-                <div class="row">
-                    <div class="col-md-2">
-                        <label for="StudentName">Address</label>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
-                    </div>
-                </div>
-                <br/>
-                <div class="row">
-                    <div class="col-md-2">
-                        <label for="StudentName">E-mail</label>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="e-mail" class="form-control" id="univercityname" aria-describedby="nameHelp">
-                    </div>
-                </div>
-                <br/>
-                <div class="row">
-                    <div class="col-md-2">
-                        <label for="StudentName">Web Site</label>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
-                    </div>
-                </div>
-                <br/>
-                <div class="row">
-                    <div class="col-md-2">
-                        <label for="StudentName">Contact Number</label>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
-                    </div>
-                </div>
-                <br/>
-                <div class="row">
-                    <div class="col-md-2">
-                        <label for="StudentName">Contact Person</label>
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
-                    </div>
-                </div>
-                <br/>
-                <div class="row">
-                    <div class="col-md-2">
-                        <label for="StudentName">About Us description</label>
-                    </div>
-                    <div class="col-md-6">
-                        <textarea class="form-control" id="univercityname"></textarea>
-                    </div>
-                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary"> Save Changes </button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Response</button>
             </div>
         </div>
     </div>
