@@ -1,6 +1,8 @@
 <div class="container">
     <div class="jumbotron">
         <div class="vacancies">
+            <h3>Publish Vacancies</h3>
+            <br/>
             <table class="table table-hover vacancies-table">
                 <thead>
                     <tr>
@@ -20,15 +22,14 @@
                         <td>{{jobVacancy.duration}}</td>
                         <td>{{jobVacancy.paidNonPaid}}</td>
                         <td>
-                            <button button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Edit</button>
+                            <button button class="btn btn-primary" data-toggle="modal" data-target="#myModal" (click)="setVacancy(jobVacancy)">Edit</button>
                             <button class="btn btn-danger">Remove</button>
                         </td>
                     </tr>
                 </tbody>
             </table>
 
-            <!--model for editing vacancy-->
-            <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal fade" id="myModal" role="dialog" *ngIf="store.jobVacancy">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -41,7 +42,8 @@
                                     <label for="StudentName">Department</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+                                    <input type="text-felid" class="form-control" 
+                                    id="univercityname" aria-describedby="nameHelp" [(ngModel)]="store.jobVacancy.companyName">
                                 </div>
                             </div>
                         </div>
@@ -51,7 +53,8 @@
                                     <label for="StudentName">Vacancy heading</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+                                    <input type="text-felid" class="form-control" id="univercityname" 
+                                    aria-describedby="nameHelp" [(ngModel)]="store.jobVacancy.jobTitle">
                                 </div>
                             </div>
                         </div>
@@ -61,7 +64,8 @@
                                     <label for="StudentName">Description</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <textarea class="form-control" id="univercityname" aria-describedby="nameHelp"></textarea>
+                                    <textarea class="form-control" id="univercityname" 
+                                    aria-describedby="nameHelp" [(ngModel)]="store.jobVacancy.description"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -71,17 +75,19 @@
                                     <label for="StudentName">Duration</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+                                    <input type="text-felid" class="form-control" 
+                                    id="univercityname" aria-describedby="nameHelp" [(ngModel)]="store.jobVacancy.duration">
                                 </div>
                             </div>
                         </div>
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-md-2">
-                                    <label for="StudentName">pPain/Non-paid</label>
+                                    <label for="StudentName">Pain/Non-paid</label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
+                                    <input type="text-felid" class="form-control" id="univercityname" 
+                                    aria-describedby="nameHelp" [(ngModel)]="store.jobVacancy.paidNonPaid" >
                                 </div>
                             </div>
                         </div>
@@ -91,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <!--end model for editing vacancy-->
+            
 
             <div class="row">
                 <div class="col-md-2">

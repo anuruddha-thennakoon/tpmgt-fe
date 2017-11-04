@@ -33,7 +33,7 @@ export class PublishVacanciesComponent implements OnInit {
   }
 
   setVacancy(jobVacancy) {
-    this.store.company = jobVacancy;
+    this.store.jobVacancy = jobVacancy;
   }
 
   createJobVacancy() {

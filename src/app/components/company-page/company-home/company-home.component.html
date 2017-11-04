@@ -16,22 +16,26 @@
 
         <table class="table table-hover vacancies-table">
           <thead>
-            <tr>
-              <th>Univercity</th>
+            <tr >
+              <th>Name</th>
               <th>Faculty</th>
-              <th>Student Name</th>
               <th>NIC</th>
+              <th>feildOfStudy</th>
+              <th>year</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>SLIIT</td>
-              <td>IT</td>
-              <td>abhj ajbs</td>
-              <td>789798465</td>
+            <tr *ngFor="let student of store.studentList">
+              <td>{{student.studentName}}</td>
+              <td>{{student.faculty}}</td>
+              <td>{{student.nic}}</td>
+              <td>{{student.feildOfStudy}}</td>
+              <td>{{student.year}}</td>
+
               <td>
-                <button button class="btn btn-primary" data-toggle="modal" data-target="#viewModal">View</button>
+                <button button class="btn btn-primary" data-toggle="modal" data-target="#viewModal"
+                (click)="setStudent(student)" >View</button>
                 <button button class="btn btn-warning" >Add to company</button>
               </td>
             </tr>
@@ -39,7 +43,7 @@
         </table>
 
 
-        <div class="modal fade" id="viewModal" role="dialog">
+        <div class="modal fade" id="viewModal" role="dialog" *ngIf="store.student">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
@@ -50,35 +54,36 @@
 
               <div class="modal-body">
                 <div class="row">
-                  <div class="col-md-6">
-                    <img src="../../../assets/images/profile-dylan.jpg" />
+                  <div class="col-md-4">
+                    <img src="../../../assets/images/placeholder.jpg" />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-8">
                     <div class=" profile-name">
-                      <p>Dylan O'Brien</p>
+                      <label>Student Name </label><p>{{store.student.studentName}}</p>
                     </div>
                     <div class=" profile-institute">
-                      <p>Sri Lanka Institute of Information Technology</p>
-                      <p>Software Engineering - 3rd Year
+                      <label>Univercity </label><p>Sri Lanka Institute of Information Technology</p>
+                      <label>Feild of study </label><p>{{store.student.feildOfStudy}} </p>
+                      <label>Year </label><p>{{store.student.year}}</p> 
                     </div>
                     <hr>
                     <div class=" profile-details">
                       <table>
                         <tr>
-                          <td><label> Age</label></td>
-                          <td>26 years</td>
+                          <td><label> Age </label></td>
+                          <td>22 years</td>
                         </tr>
                         <tr>
-                          <td><label> Address</label></td>
-                          <td>No 250, Horton Place, Colombo 07</td>
+                          <td><label> Address </label></td>
+                          <td>Kandy</td>
                         </tr>
                         <tr>
-                          <td><label>Email</label></td>
-                          <td>dylan91@gmail.com</td>
+                          <td><label>Email  </label></td>
+                          <td>1345@gmail.com</td>
                         </tr>
                         <tr>
-                          <td><label>Phone</label></td>
-                          <td>+(94)71 2883991</td>
+                          <td><label>Phone  </label></td>
+                          <td>071 2883991</td>
                         </tr>
                       </table>
                     </div>

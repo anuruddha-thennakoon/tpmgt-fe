@@ -16,4 +16,8 @@ export class CompanyInternComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  setStudent(student) {
+    this.store.student = student;
+  }
 }

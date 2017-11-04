@@ -45,5 +45,15 @@ export class CompanyService {
         .catch(err => reject(err));
     });
   }
+  
+  getALLStudents() {
+    return new Promise((resolve, reject) => {
+      this.axios
+        .get('https://api.myjson.com/bins/qa203')
+        .then(result => resolve(result.data))
+        .catch(err => reject(err));
+    });
+  }
+  
 
 }
