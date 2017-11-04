@@ -1,94 +1,78 @@
-<div class=" edit-student-profile-header">
-   
-</div>
-<div class="create-resume">
 
 
 
-<div class="col-md-12 resume-form-div">
-    <div class="create-resume-inner">
-        <div class="col-md-12 create-resume-text">
-   Curriculum Vitae
-</div>
-        <form class="create-resume-form">
-            <div class="col-md-12 resume-form-inner">
+<kendo-pdf-export #pdf   >
+ <div class="row example-wrapper" style="background:#ffffff">
+    <div class="col-xs-12 col-sm-6 offset-sm-3 example-col">
+        <div class="card">
+            <div class="card-block create-resume-inner">
+                <form class="k-form create-resume-form">
+                    <fieldset>
+                        <legend>Basic Details</legend>
 
-                <div class=" row ">
-                    <div class="col-md-7 basic-info">
-                        <input type="name" placeholder="Name" />
-                        <br>
-                        <input type="text" placeholder="Student Number" />
-                        <br>
-                        <input type="text" placeholder="Address" />
-                        <br>
-                        <input type="number" placeholder="Phone" />
-                        <br>
-                        <input type="email" placeholder="Email" />
-                    </div>
-                    <div class="col-md-5 cv-image">
-                        <label for="file-input">
-                    <img id="profile-pic" src="../../assets/images/placeholder.jpg"/>
-                 </label>
-                        <input id="file-input" type="file" />
-                    </div>
-                </div>
+                        <label class="k-form-field">
+                            <span>Full Name</span>
+                            <input class="k-textbox" placeholder="Your Name" />
+                        </label>
+                        <label class="k-form-field">
+                            <span>Address</span>
+                            <input class="k-textbox"  placeholder="Your Address" />
+                        </label>
+                        <label class="k-form-field">
+                            <span>Phone</span>
+                            <input class="k-textbox"  placeholder="Your Phone" />
+                        </label>
+                         <label class="k-form-field">
+                            <span>Email <span class="k-required">*</span></span>
+                            <input type="email" class="k-textbox"  placeholder="Your Email" />
+                        </label>
+                        <label class="k-form-field">
+                            <span>NIC</span>
+                            <input class="k-textbox"  placeholder="Your Address" />
+                        </label>
+                       
+                        <label class="k-form-field">
+                            <span>Description</span>
+                            <textarea class="k-textarea" placeholder="Add your description"></textarea> 
+                        </label>
+                    </fieldset>
 
+                    <fieldset>
+                        <legend>Educational Qualifications</legend>
+                        <label class="k-form-field">
+                            <span>GCE O/L</span>
+                            <input class="k-textbox"  placeholder="GCE O/L Results" />
+                        </label>
+                        <label class="k-form-field">
+                            <span>GCE A/L</span>
+                            <input type="k-textbox" class="k-textbox"  placeholder="GCE A/L Results"/>
+                        </label>
+                        <label class="k-form-field">
+                            <span>CGPA</span>
+                            <input type="k-textbox" class="k-textbox"  placeholder="CGPA"/>
+                        </label>
+                    </fieldset>
 
-
-                <div class=" row ">
-                    <div class="col-md-12 Description">
-                        <textarea placeholder="Add a small description about yourself here"></textarea>
-                    </div>
-                </div>
-
-                <hr>
-                <div class=" row ">
-                    <div class="col-md-12 personal-information">
-                        <h4>Personal Information and Interests</h4>
-                        <input type="text" placeholder="Full Name" />
-                        <br>
-                        <input type="text" placeholder="NIC" />
-                        <br>
-                        <input type="date" placeholder="Birthday" />
-                        <br>
-                        <textarea placeholder="Add a small description about your interests here"></textarea>
-                    </div>
-
-                </div>
-
-                <div class=" row ">
-                    <div class="col-md-12 Education">
-                        <h4>Educational Qualifications</h4>
-                        <input type="text" placeholder="Educational Qualification 1-GCE O/L" />
-                        <br>
-                        <input type="text" placeholder="Educational Qualification 2-GCE A/L" />
-                        <br>
-                        <input type="text" placeholder="CGPA" />
-                        <br>
-                        <input type="text" placeholder="Educational Qualification 4" />
-                    </div>
-
-                </div>
-
-                <div class=" row ">
-                    <div class="col-md-12 Experience">
-                        <h4>Experience</h4>
-                        <textarea placeholder="Add a small description about your experiences here"></textarea>
-                    </div>
-
-                </div>
-
-
+                    <fieldset>
+                        <legend>Experience</legend>
+                         <label class="k-form-field">
+                            <span>Experience</span>
+                            <textarea class="k-textarea" placeholder="Describe your experiences briefly here"></textarea> 
+                        </label>
+                    </fieldset>
+                    
+                </form>
             </div>
-
-            <!--<button class="btn btn-primary btn-create-resume">Create Resume</button>-->
-            <button kendo-button (click)="pdf.saveAs('resume.pdf')">
-        Create Resume
-      </button>
-            <kendo-pdf-export #pdf paperSize="A4" margin="2cm">
-
-            </kendo-pdf-export>
-        </form>
+        </div>
     </div>
 </div>
-</div>
+ </kendo-pdf-export>
+ <button kendo-button (click)="pdf.saveAs('invoice.pdf')">
+              Save As PDF...
+            </button>
+
+
+
+  
+     
+            

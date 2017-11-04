@@ -15,7 +15,6 @@ export class CompanyNavigationComponent implements OnInit {
 
   constructor(
     private store: StoreService,
-    private company: CompanyService,
     private router: Router
   ) { }
 
@@ -31,14 +30,7 @@ export class CompanyNavigationComponent implements OnInit {
   }
 
   goToPublishVacancy(){
-    this.company.getALLVacancies()
-      .then(result => {
-        this.store.jobVacancyList = new Array<jobVacancyModel>();
-        this.store.jobVacancyList = JSON.parse(JSON.stringify(result));
-        this.router.navigateByUrl('/companypage/publishVacancies');
-      }).catch(error => {
-        console.log(error);
-      });
+    this.router.navigateByUrl('/companypage/publishVacancies');
   }
 
   goToReports(){

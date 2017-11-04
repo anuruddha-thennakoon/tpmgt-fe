@@ -91,55 +91,70 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary"> Save Changes </button>
-                        </div>
                     </div>
-                </div>
-            </div>
-            
-
-            <div class="row">
-                <div class="col-md-2">
-                    <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample">
-                + Add new vacancy
-            </button>
-                </div>
-            </div>
-            <br/>
-            <div class="row">
-                <form>
-                    <div class="collapse" id="collapseExample" aria-expanded="false">
-                        <br/>
-                        <div class="col-md-2">
-                            <input type="text-felid" class="form-control" placeholder="Department" name="Department" [(ngModel)]="newVacancy.companyName">
-                        </div>
-
-                        <div class="col-md-2">
-                            <input type="text-felid" class="form-control" placeholder="Vacancy Title" name="VacancyTitle" [(ngModel)]="newVacancy.jobTitle">
-                        </div>
-
-                        <div class="col-md-2">
-                            <input type="text-felid" class="form-control" placeholder="Description" name="Description" [(ngModel)]="newVacancy.description">
-                        </div>
-
-                        <div class="col-md-2">
-                            <input type="text-felid" class="form-control" placeholder="Duration" name="Duration" [(ngModel)]="newVacancy.duration">
-                        </div>
-
-                        <div class="col-md-2">
-                            <input type="text-felid" class="form-control" placeholder="Paid/Non-paid" name="Nonpaid" [(ngModel)]="newVacancy.paidNonPaid">
-                        </div>
-
-                        <div class="col-md-1">
-                            <div class="w3-col" style="text-align: right">
-                                <button class="btn btn-primary pull-right" (click)="createJobVacancy()">Publish</button>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="StudentName">pPain/Non-paid</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text-felid" class="form-control" id="univercityname" aria-describedby="nameHelp">
                             </div>
                         </div>
                     </div>
-                </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary"> Save Changes </button>
+                    </div>
+                </div>
             </div>
-            <br/>
+<<<<<<< HEAD
+            
+=======
         </div>
+        <!--end model for editing vacancy-->
+>>>>>>> 1f46dfc4dac2426e3a3100ff386579a16ac2668d
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-1">
+                <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample">
+                + Add new vacancy
+            </button>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <form>
+                <div class="collapse" id="collapseExample" aria-expanded="false">
+                    <br/>
+                    <div class="col-md-2">
+                        <input type="text-felid" class="form-control" placeholder="Department">
+                    </div>
+
+                    <div class="col-md-2">
+                        <input type="text-felid" class="form-control" placeholder="Vacancy Title">
+                    </div>
+
+                    <div class="col-md-2">
+                        <input type="text-felid" class="form-control" placeholder="Description">
+                    </div>
+
+                    <div class="col-md-2">
+                        <input type="text-felid" class="form-control" placeholder="Duration">
+                    </div>
+
+                    <div class="col-md-2">
+                        <input type="text-felid" class="form-control" placeholder="Paid/Non-paid">
+                    </div>
+
+                    <div class="col-md-1">
+                        <div class="w3-col" style="text-align: right">
+                            <button class="btn btn-default pull-right" ng-click="">Publish</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br/>
     </div>
 </div>

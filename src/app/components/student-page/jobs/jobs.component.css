@@ -8,7 +8,7 @@
 }
 
 .vacancies-table{
-    width:80%;
+    width:auto;
     margin-left:auto;
     margin-right:auto;
     padding-bottom: 30px;
@@ -22,8 +22,10 @@ table>tbody>tr>td{
     text-align: center;
 }
 
-.vacancies{
+/*.vacancies{
     background: #ffffff !important;
     height:auto;
     padding-bottom:60px;
-}
+     margin-left:auto;
+    margin-right:auto;
+}*/
