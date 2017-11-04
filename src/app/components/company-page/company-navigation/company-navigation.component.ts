@@ -20,6 +20,13 @@ export class CompanyNavigationComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.company.getALLStudents()
+    .then(result => {
+      this.store.studentList = new Array<studentModal>();
+      this.store.studentList = JSON.parse(JSON.stringify(result));
+    }).catch(error => {
+      console.log(error);
+    });
   }
 
   goDashboard() {
@@ -39,7 +46,6 @@ export class CompanyNavigationComponent implements OnInit {
   }
   
   goToInterns(){
-    
     this.company.getALLStudents()
     .then(result => {
       this.store.studentList = new Array<studentModal>();
@@ -48,17 +54,9 @@ export class CompanyNavigationComponent implements OnInit {
     }).catch(error => {
       console.log(error);
     });
+    
   }
 
-   goToHome(){
-     this.company.getALLStudents()
-    .then(result => {
-      this.store.studentList = new Array<studentModal>();
-      this.store.studentList = JSON.parse(JSON.stringify(result));
-      this.router.navigateByUrl('/companypage/companyHome');
-    }).catch(error => {
-      console.log(error);
-    });
-  }
+  
 
 }
