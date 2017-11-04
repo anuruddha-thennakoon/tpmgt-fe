@@ -3,6 +3,8 @@ import { StoreService } from '../../../services/store.service';
 import { Router } from '@angular/router';
 import { CompanyService } from '../../../services/callers/company.service';
 import { CompanyModel } from '../../../models/company.model';
+import { jobVacancyModel } from '../../../models/jobVacancy.model';
+import { studentModal } from '../../../models/studentCom.model';
 
 @Component({
   selector: 'app-company-navigation',
@@ -13,10 +15,18 @@ export class CompanyNavigationComponent implements OnInit {
 
   constructor(
     private store: StoreService,
-    private router: Router
+    private router: Router,
+    private company:CompanyService
   ) { }
 
   ngOnInit() {
+    this.company.getALLStudents()
+    .then(result => {
+      this.store.studentList = new Array<studentModal>();
+      this.store.studentList = JSON.parse(JSON.stringify(result));
+    }).catch(error => {
+      console.log(error);
+    });
   }
 
   goDashboard() {
@@ -36,11 +46,17 @@ export class CompanyNavigationComponent implements OnInit {
   }
   
   goToInterns(){
-    this.router.navigateByUrl('/companypage/interns');
+    this.company.getALLStudents()
+    .then(result => {
+      this.store.studentList = new Array<studentModal>();
+      this.store.studentList = JSON.parse(JSON.stringify(result));
+      this.router.navigateByUrl('/companypage/interns');
+    }).catch(error => {
+      console.log(error);
+    });
+    
   }
 
-   goToHome(){
-    this.router.navigateByUrl('/companypage/companyHome');
-  }
+  
 
 }

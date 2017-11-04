@@ -1,10 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdminPageComponent } from './admin-create-account.component';
+import { AdminCreateAccountComponent } from './admin-create-account.component';
 
 describe('AdminCreateAccountComponent', () => {
   let component: AdminCreateAccountComponent;
-  let fixture: ComponentFixture<AdminPageComponent>;
+  let fixture: ComponentFixture<AdminCreateAccountComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({

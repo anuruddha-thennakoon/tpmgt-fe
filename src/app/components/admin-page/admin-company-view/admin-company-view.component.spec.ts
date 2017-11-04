@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdminInquiryViewComponent } from './admin-company-view.component';
+import { AdminCompanyViewComponent } from './admin-company-view.component';
 
 describe('AdminCompanyViewComponent', () => {
   let component: AdminCompanyViewComponent;

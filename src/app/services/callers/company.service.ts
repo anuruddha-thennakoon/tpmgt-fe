@@ -13,7 +13,25 @@ export class CompanyService {
   getALLCompanies() {
     return new Promise((resolve, reject) => {
       this.axios
-        .get(this.api.COMPANY())
+        .get('http://127.0.0.1:8000/api/company')
+        .then(result => resolve(result.data))
+        .catch(err => reject(err));
+    });
+  }
+
+  getALLVacancies() {
+    return new Promise((resolve, reject) => {
+      this.axios
+        .get('http://127.0.0.1:8000/api/jobVacancy')
+        .then(result => resolve(result.data))
+        .catch(err => reject(err));
+    });
+  }
+
+  createVacancies(data) {
+    return new Promise((resolve, reject) => {
+      this.axios
+        .post('http://127.0.0.1:8000/api/jobVacancy', data)
         .then(result => resolve(result.data))
         .catch(err => reject(err));
     });
@@ -22,11 +40,21 @@ export class CompanyService {
   createCompany(data) {
     return new Promise((resolve, reject) => {
       this.axios
-        .post(this.api.COMPANY(), data)
+        .post('http://127.0.0.1:8000/api/company', data)
         .then(result => resolve(result.data))
         .catch(err => reject(err));
     });
   }
+  
+  getALLStudents() {
+    return new Promise((resolve, reject) => {
+      this.axios
+        .get('https://api.myjson.com/bins/qa203')
+        .then(result => resolve(result.data))
+        .catch(err => reject(err));
+    });
+  }
+  
 
 
 

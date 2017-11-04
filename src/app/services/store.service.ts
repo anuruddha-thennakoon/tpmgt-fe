@@ -14,7 +14,7 @@ export class StoreService {
 
   studentList: Array<studentModel>;
   student:studentModel;
-  
+
   constructor() { }
 
 }
