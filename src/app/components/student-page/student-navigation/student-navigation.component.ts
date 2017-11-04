@@ -26,4 +26,8 @@ goJobs() {
  createResume() {
     this.router.navigateByUrl('/studentpage/createresume');
   }
+
+   studentHelp() {
+    this.router.navigateByUrl('/studentpage/studenthelp');
+  }
 }

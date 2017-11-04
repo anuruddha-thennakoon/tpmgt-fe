@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { StoreService } from '../../../services/store.service';
 
 @Component({
   selector: 'app-company-view',
@@ -8,14 +7,9 @@ import { StoreService } from '../../../services/store.service';
 })
 export class AdminCompanyViewComponent implements OnInit {
 
-  constructor(
-    private store: StoreService
-  ) { }
+  constructor() { }
 
-  ngOnInit() {}
-
-  setCompany(company) {
-    this.store.company = company;
+  ngOnInit() {
   }
 
 }
