@@ -15,7 +15,8 @@ export class CompanyNavigationComponent implements OnInit {
 
   constructor(
     private store: StoreService,
-    private router: Router
+    private router: Router,
+    private company:CompanyService
   ) { }
 
   ngOnInit() {
